@@ -8,4 +8,4 @@
 
 4. Mostre apenas as palavras com mais de um significado
 
-5. Mostre 
+5. Mostre quantas definições uma palavra tem em todos os dicionarios 
