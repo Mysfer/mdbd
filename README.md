@@ -9,3 +9,6 @@
 4. Mostre apenas as palavras com mais de um significado
 
 5. Mostre quantas definições uma palavra tem em todos os dicionarios 
+
+
+Nomes: Joao Pedro, Barbara tavares, Paulo Henrique, Larissa Adriana e Leticya Oliveira
