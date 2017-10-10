@@ -11,4 +11,6 @@
 5. Mostre quantas definições uma palavra tem em todos os dicionarios 
 
 
-Nomes: Joao Pedro, Barbara tavares, Paulo Henrique, Larissa Adriana e Leticya Oliveira
+### :octocat: Alunos: Joao Pedro, Barbara tavares, Paulo Henrique, Larissa Adriana e Leticya 
+
+![alt text](https://github.com/Mysfer/mdbd/blob/master/Capturar.PNG "Diagrama")
