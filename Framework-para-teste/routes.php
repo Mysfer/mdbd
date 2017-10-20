@@ -4,46 +4,20 @@
 
 switch ($uri) {
 
-
-    case '/cadastro':
+    case '/':
         
-        require './app/views/cadastro.php';
-        break;
-    
-    case '/jogar':
-        
-        require './app/views/jogar.php';        
+        require './app/views/home.php';
         break;
 
-        case '/start':
+    case '/cadastrarpalavra':
         
-        $testeController->start();
-        break;
-    
-    case '/jogo':
-        
-        $testeController->jogo();      
-        break; 
-
-    case '/venceu':
-        
-        $testeController->venceu();        
-        break;
-
-    case '/score':
-           
-        $testeController->score();
-        break;
+        require './app/views/cadastrarpalavra.php';
+        break;  
     
     
-    case '/salvar':
-           
-        $testeController->salvar();
-        break;
-    
-    case '/consultar':
+    case '/consultarpalavra':
             
-        $testeController->consultar();
+        $testeController->consultarpalavra();
         break;
 
     default:

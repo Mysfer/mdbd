@@ -13,9 +13,9 @@
         <thead>
         
             <tr>
-                <th>Id</th>
+                
                 <th>Nome</th>
-                <th>Idade</th>
+                <th>Pronuncia</th>
                 
             </tr>
         </thead>
@@ -23,9 +23,9 @@
         <tbody>
             <?php foreach($dados as $d) { ?>
             <tr>
-                <td><?= $d['id'] ?></td>
+                
                 <td><?= $d['nome'] ?></td>
-                <td><?= $d['idade'] ?></td>
+                <td><?= $d['pronuncia'] ?></td>
                 
             </tr>
             <?php  } ?>

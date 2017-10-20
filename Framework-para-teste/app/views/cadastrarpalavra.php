@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/public/css/bootstrap.css">
-    <title>Jogar</title>
+    <title>Página de cadastro</title>
 </head>
 
 <body>
@@ -15,16 +15,21 @@
         <div class="row">
             <div class="col-md-6">
 
-                <h1 class="page-header">Digite seu nome e comece a jogar!</h1>
+                <h1 class="page-header">Página de cadastro</h1>
 
-                <form method="post" action="/start">
+                <form method="post" action="/">
 
                     <div class="form-group">
                         <label for="nome">Nome</label>
                         <input class="form-control" type="text" name="nome" id="nome" value="">
-                    </div>                   
+                    </div>
 
-                    <button class="btn btn-success btn-lg" type="">Jogar</button>
+                    <div class="form-group">
+                        <label for="idade">Idade</label>
+                        <input class="form-control" type="text" name="idade" value="">
+                    </div>
+
+                    <button class="btn btn-success btn-lg" type="">Enviar</button>
                 </form>
             </div>
         </div>
