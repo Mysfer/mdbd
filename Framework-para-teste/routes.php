@@ -12,6 +12,11 @@ switch ($uri) {
     case '/cadastrarpalavra':
         
         require './app/views/cadastrarpalavra.php';
+        break;
+
+    case '/cadastrarpalavra-salvar':
+        
+        $testeController->cadastrarpalavra();
         break;  
     
     

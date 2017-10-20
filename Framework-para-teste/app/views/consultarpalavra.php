@@ -14,7 +14,7 @@
         
             <tr>
                 
-                <th>Nome</th>
+                <th>Palavra</th>
                 <th>Pronúncia</th>
                 <th>Origem(etimologia)</th>
                 
