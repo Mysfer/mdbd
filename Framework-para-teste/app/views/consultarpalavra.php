@@ -15,7 +15,8 @@
             <tr>
                 
                 <th>Nome</th>
-                <th>Pronuncia</th>
+                <th>Pronúncia</th>
+                <th>Origem(etimologia)</th>
                 
             </tr>
         </thead>
@@ -24,8 +25,9 @@
             <?php foreach($dados as $d) { ?>
             <tr>
                 
-                <td><?= $d['nome'] ?></td>
+                <td><?= $d['palavra'] ?></td>
                 <td><?= $d['pronuncia'] ?></td>
+                <td><?= $d['origem'] ?></td>
                 
             </tr>
             <?php  } ?>

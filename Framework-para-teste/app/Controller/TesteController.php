@@ -13,7 +13,7 @@ class TesteController
         $q = new QueryBuilder();
 
         //busca os dados, guarda em uma var
-        $dados = $q->select('alunos');
+        $dados = $q->select('palavras');
         //chama a view
         require './app/views/consultarpalavra.php';
 
