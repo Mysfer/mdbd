@@ -9,7 +9,7 @@ switch ($uri) {
         $testeController->index();
         break;
 
-    case '/cadpalavra':
+    case '/cadastro/palavra':
         
         require './app/views/cadpalavra.php';
         break;
