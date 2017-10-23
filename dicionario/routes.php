@@ -27,7 +27,11 @@ switch ($uri) {
     case '/salvarsignificado':
         
         $testeController->salvarsignificado();
-        break;  
+        break; 
+
+    case '/consultar/significado':
+        $testeController->consultarsignificado();
+        break; 
 
     default:
         require './app/views/error.html'; 

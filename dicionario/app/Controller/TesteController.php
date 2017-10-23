@@ -70,4 +70,23 @@ class TesteController
         header('Location: /');
 
     }
+
+    public function consultarsignificado()
+        {
+
+            //criação da variavel
+
+            $dados = [];
+
+            //conexão com o banco
+
+            $q = new QueryBuilder();
+
+            //busca os dados, guarda em uma var
+            $dados = $q->select('significado');
+
+            //chama a view
+            require './app/views/viewsignificado.php';
+    }
+
 }
