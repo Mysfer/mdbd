@@ -18,7 +18,16 @@ switch ($uri) {
         
         $testeController->salvarpalavra();
         break;  
+
+    case '/cadastro/significado':
+        
+        require './app/views/cadsignificado.php';
+        break;
     
+    case '/salvarsignificado':
+        
+        $testeController->salvarsignificado();
+        break;  
 
     default:
         require './app/views/error.html'; 

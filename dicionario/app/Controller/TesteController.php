@@ -53,8 +53,21 @@ class TesteController
 
          //chama a view
         require './app/views/index.php';
+    }
 
+    public function salvarsignificado()
+    {
+        //receber os dados
+        $dados['significado'] = $_POST['significado'];
 
+        //conectar com o banco
+        $q = new QueryBuilder();
+
+        //enviar os dados para o banco
+        $q->insert('significado', $dados);
+
+        //redirecionar para a rota /consultarpalavra
+        header('Location: /');
 
     }
 }
