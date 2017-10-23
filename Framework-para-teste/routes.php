@@ -6,24 +6,19 @@ switch ($uri) {
 
     case '/':
         
-        require './app/views/home.php';
+        $testeController->index();
         break;
 
-    case '/cadastrarpalavra':
+    case '/cadpalavra':
         
-        require './app/views/cadastrarpalavra.php';
+        require './app/views/cadpalavra.php';
         break;
 
-    case '/cadastrarpalavra-salvar':
+    case '/salvarpalavra':
         
-        $testeController->cadastrarpalavra();
+        $testeController->salvarpalavra();
         break;  
     
-    
-    case '/consultarpalavra':
-            
-        $testeController->consultarpalavra();
-        break;
 
     default:
         require './app/views/error.html'; 

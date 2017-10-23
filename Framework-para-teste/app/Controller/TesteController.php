@@ -7,7 +7,7 @@ use Project\Db\QueryBuilder;
 class TesteController
 {
 
-    public function cadastrarpalavra()
+    public function salvarpalavra()
     {
         //receber os dados
         $dados['palavra'] = $_POST['palavra'];
@@ -33,8 +33,28 @@ class TesteController
         //busca os dados, guarda em uma var
         $dados = $q->select('palavras');
         //chama a view
-        require './app/views/consultarpalavra.php';
+        require './app/views/consultar.php';
 
     }
     
+    public function index()
+    {
+
+        //criação da variavel
+
+        $dados = [];
+
+        //conexão com o banco
+
+         $q = new QueryBuilder();
+
+        //busca os dados, guarda em uma var
+        $dados = $q->select('palavras');
+
+         //chama a view
+        require './app/views/index.php';
+
+
+
+    }
 }
