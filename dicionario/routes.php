@@ -33,6 +33,14 @@ switch ($uri) {
         $testeController->consultarsignificado();
         break; 
 
+    case '/cadastrar/dicionario':
+        require './app/views/caddicionario.php';
+        break;
+
+    case '/salvardicionario':
+        $testeController->salvardicionario();
+        break;
+
     default:
         require './app/views/error.html'; 
         break;
