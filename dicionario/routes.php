@@ -23,8 +23,9 @@ switch ($uri) {
         $testeController->salvarpalavra();
         break;  
 
-    case '/link/significado':  
-        require './app/views/linksignificado.php';
+    case '/link/significado':
+        $testeController->linksignificado();  
+        
         break;
     
     case '/salvarsignificado':
@@ -41,13 +42,9 @@ switch ($uri) {
 
     case '/salvardicionario':
         $testeController->salvardicionario();
-        break;
+        break;     
 
-     case '/link/sinonimo':
-        require './app/views/linksinonimo.php';
-        break;
-
-    case '/linksinonimo':
+    case '/link/sinonimo':
         $testeController->linksinonimo();
         break;
 

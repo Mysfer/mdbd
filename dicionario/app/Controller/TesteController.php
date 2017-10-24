@@ -33,7 +33,8 @@ class TesteController
         //busca os dados, guarda em uma var
         $dados = $q->select('palavras');
         //chama a view
-        require './app/views/consultar.php';
+        //require './app/views/consultar.php';
+        require './app/views/linksignificado.php';
 
     }
     
@@ -71,22 +72,15 @@ class TesteController
 
     }
 
-    public function consultarsignificado()
-        {
+    public function linksignificado()
+    {
+        //conexao com banco
+        $q = new QueryBuilder();
 
-            //criação da variavel
-
-            $dados = [];
-
-            //conexão com o banco
-
-            $q = new QueryBuilder();
-
-            //busca os dados, guarda em uma var
-            $dados = $q->select('significado');
-
-            //chama a view
-            require './app/views/viewsignificado.php';
+        //busca os dados, guarda em uma var
+        $dados = $q->select('palavras');
+        //chama a view        
+        require './app/views/linksignificado.php';
     }
 
     public function salvardicionario()
@@ -108,8 +102,15 @@ class TesteController
 
     public function linksinonimo()
     {
+        //conexao com banco
+        $q = new QueryBuilder();
 
+        //busca os dados, guarda em uma var
+        $dados = $q->select('palavras');
+        //chama a view        
+        require './app/views/linksinonimo.php';
     }
+
 
 
 }

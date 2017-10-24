@@ -20,9 +20,11 @@
                 <form method="post" action="/salvarsignificado">
 
                     <div class="form-group">
-                        <label for="significado">Palavra a ser linkada:</label>
-                        <select name="" id="">
-                            <option value="1"><!--<?= $d['palavra'] ?> --></option>
+                        <label for="palavra">Palavra a ser linkada:</label>
+                        <select name="palavra" id="">
+                            <?php foreach($dados as $d) { ?>
+                            <option value="1"><?= $d['palavra'] ?></option>
+                            <?php } ?>
                         </select>
                     </div>
                     <div class="form-group">
