@@ -9,8 +9,9 @@ switch ($uri) {
         $testeController->index();
         break;
 
-    case '/consultar':
-        $testeController->consultar();
+    case '/template':
+
+        require './app/views/template.html';
         break;
 
     case '/cadastro/palavra':
@@ -18,18 +19,15 @@ switch ($uri) {
         require './app/views/cadpalavra.php';
         break;
 
-    case '/salvarpalavra':
-        
+    case '/salvarpalavra': 
         $testeController->salvarpalavra();
         break;  
 
-    case '/cadastro/significado':
-        
+    case '/cadastro/significado':  
         require './app/views/cadsignificado.php';
         break;
     
     case '/salvarsignificado':
-        
         $testeController->salvarsignificado();
         break; 
 
@@ -51,6 +49,10 @@ switch ($uri) {
 
     case '/linksinonimo':
         $testeController->linksinonimo();
+        break;
+
+    case '/consultar':
+        $testeController->consultar();
         break;
 
     default:
