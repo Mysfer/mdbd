@@ -21,7 +21,9 @@
 
                     <div class="form-group">
                         <label for="significado">Palavra a ser linkada:</label>
-                        <input type="text" placeholder="Palavra"/>
+                        <select name="" id="">
+                            <option value="1"><!--<?= $d['palavra'] ?> --></option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="significado">Significado</label>
