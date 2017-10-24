@@ -89,4 +89,23 @@ class TesteController
             require './app/views/viewsignificado.php';
     }
 
+    public function salvardicionario()
+    {
+        //receber os dados
+        $dados['nome'] = $_POST['nome'];
+        $dados['autor'] = $_POST['autor'];
+        $dados['editora'] = $_POST['editora'];
+
+        //conectar com o banco
+        $q = new QueryBuilder();
+
+        //enviar os dados para o banco
+        $q->insert('dicionario', $dados);
+
+        //devolve a pagina cadastrar dicionario
+        header('Location: /cadastrar/dicionario');
+    }
+
+
+
 }
