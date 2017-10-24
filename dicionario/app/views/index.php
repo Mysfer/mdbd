@@ -10,7 +10,7 @@
         <ul>
             <?php foreach($dados as $d) { ?>
                 
-                <li><a ><?= $d['palavra'] ?></a></li>
+                <li><a href="/consultar?id=<?= $d['id'] ?>"><?= $d['palavra'] ?></a></li>
 
             <?php  } ?>
         </ul>

@@ -9,6 +9,10 @@ switch ($uri) {
         $testeController->index();
         break;
 
+    case '/consultar':
+        $testeController->consultar();
+        break;
+
     case '/cadastro/palavra':
         
         require './app/views/cadpalavra.php';
@@ -39,6 +43,14 @@ switch ($uri) {
 
     case '/salvardicionario':
         $testeController->salvardicionario();
+        break;
+
+     case '/link/sinonimo':
+        require './app/views/linksinonimo.php';
+        break;
+
+    case '/linksinonimo':
+        $testeController->linksinonimo();
         break;
 
     default:

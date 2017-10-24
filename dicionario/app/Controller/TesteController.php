@@ -25,7 +25,7 @@ class TesteController
 
     }
 
-    public function consultarpalavra()
+    public function consultar()
     {
         //conexao com banco
         $q = new QueryBuilder();
@@ -106,6 +106,10 @@ class TesteController
         header('Location: /cadastrar/dicionario');
     }
 
+    public function linksinonimo()
+    {
+
+    }
 
 
 }
