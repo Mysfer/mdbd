@@ -23,8 +23,8 @@ switch ($uri) {
         $testeController->salvarpalavra();
         break;  
 
-    case '/cadastro/significado':  
-        require './app/views/cadsignificado.php';
+    case '/link/significado':  
+        require './app/views/linksignificado.php';
         break;
     
     case '/salvarsignificado':

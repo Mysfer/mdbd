@@ -20,11 +20,15 @@
                 <form method="post" action="/salvarsignificado">
 
                     <div class="form-group">
-                        <label for="significado">Significada</label>
-                        <input class="form-control" type="text" name="significado" id="significado" value="">
+                        <label for="significado">Palavra a ser linkada:</label>
+                        <input type="text" placeholder="Palavra"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="significado">Significado</label>
+                        <textarea rows="2" cols="4" name="significado" id="significado"></textarea>
                     </div>
 
-                    <button class="btn btn-success btn-lg" type="">Enviar</button>
+                    <input type="submit" value="Enviar"/>
                 </form>
             </div>
         </div>
