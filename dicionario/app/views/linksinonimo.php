@@ -17,7 +17,7 @@
 
                 <h1 class="page-header">Página de cadastro</h1>
 
-                <form method="post" action="/salvarsignificado">
+                <form method="post" action="/linkarsinonimo">
 
                     <div class="form-group">
                         <label for="palavra">Palavra a ser linkada:</label>

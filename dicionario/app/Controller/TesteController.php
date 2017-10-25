@@ -40,48 +40,70 @@ class TesteController
     
     public function index()
     {
-
         //criação da variavel
-
         $dados = [];
-
         //conexão com o banco
-
          $q = new QueryBuilder();
-
         //busca os dados, guarda em uma var
         $dados = $q->select('palavras');
-
          //chama a view
         require './app/views/index.php';
-    }
-
-    public function salvarsignificado()
-    {
-        //receber os dados
-        $dados['significado'] = $_POST['significado'];
-
-        //conectar com o banco
-        $q = new QueryBuilder();
-
-        //enviar os dados para o banco
-        $q->insert('significado', $dados);
-
-        //redirecionar para a rota /consultarpalavra
-        header('Location: /');
-
     }
 
     public function linksignificado()
     {
         //conexao com banco
         $q = new QueryBuilder();
-
         //busca os dados, guarda em uma var
         $dados = $q->select('palavras');
         //chama a view        
         require './app/views/linksignificado.php';
     }
+
+    public function linksinonimo()
+    {
+        //conexao com banco
+        $q = new QueryBuilder();
+        //busca os dados, guarda em uma var
+        $dados = $q->select('palavras');
+        //chama a view        
+        require './app/views/linksinonimo.php';
+    }
+
+    public function linkdicionario()
+    {
+        //conexao com banco
+        $q = new QueryBuilder();
+        //busca os dados, guarda em uma var
+        $dados = $q->select('palavras');
+        //chama a view        
+        require './app/views/linkdicionario.php';
+    }
+
+    //public function linkarsignificado()
+    //{
+    //    //receber os dados
+    //    $dados['significado'] = $_POST['significado'];
+    //
+    //    //conectar com o banco
+    //    $q = new QueryBuilder();
+    //
+    //    //enviar os dados para o banco
+    //    $q->insert('significado', $dados);
+    //
+    //    //redirecionar
+    //    header('Location: /');
+    //}
+
+    //public function linkarsinonimo()
+    //{
+
+    //}
+
+    //public function linkardicionario()
+    //{
+
+    //}
 
     public function salvardicionario()
     {
@@ -98,18 +120,7 @@ class TesteController
 
         //devolve a pagina cadastrar dicionario
         header('Location: /cadastrar/dicionario');
-    }
-
-    public function linksinonimo()
-    {
-        //conexao com banco
-        $q = new QueryBuilder();
-
-        //busca os dados, guarda em uma var
-        $dados = $q->select('palavras');
-        //chama a view        
-        require './app/views/linksinonimo.php';
-    }
+    }    
 
 
 

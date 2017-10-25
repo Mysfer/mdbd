@@ -19,34 +19,46 @@ switch ($uri) {
         require './app/views/cadpalavra.php';
         break;
 
+    case '/cadastro/dicionario':
+        
+        require './app/views/caddicionario.php';
+        break;
+
     case '/salvarpalavra': 
         $testeController->salvarpalavra();
         break;  
 
     case '/link/significado':
-        $testeController->linksignificado();  
-        
+        $testeController->linksignificado();
         break;
+
+    case '/link/sinonimo':
+        $testeController->linksinonimo();
+        break;
+
+    case '/link/dicionario':
+        $testeController->linkdicionario();
+        break;     
+
+    //case '/linkarsignificado':
+    //    $testeController->linkarsignificado();
+    //    break; 
+
+    //case '/linkarsinonimo':
+    //    $testeController->linkarsinonimo();
+    //    break;
+
+    //case '/linkardicionario':
+    //    $testeController->linkardicionario();
+    //    break;
     
-    case '/salvarsignificado':
-        $testeController->salvarsignificado();
-        break; 
-
-    case '/consultar/significado':
-        $testeController->consultarsignificado();
-        break; 
-
     case '/cadastrar/dicionario':
         require './app/views/caddicionario.php';
         break;
 
     case '/salvardicionario':
         $testeController->salvardicionario();
-        break;     
-
-    case '/link/sinonimo':
-        $testeController->linksinonimo();
-        break;
+        break;  
 
     case '/consultar':
         $testeController->consultar();

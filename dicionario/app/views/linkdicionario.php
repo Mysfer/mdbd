@@ -17,7 +17,7 @@
 
                 <h1 class="page-header">Página de cadastro</h1>
 
-                <form method="post" action="/linkarsignificado">
+                <form method="post" action="/linkardicionario">
 
                     <div class="form-group">
                         <label for="palavra">Palavra a ser linkada:</label>
@@ -28,8 +28,12 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="significado">Significado</label>
-                        <textarea rows="2" cols="4" name="significado" id="significado"></textarea>
+                        <label for="sinonimo">Sinonimo</label>
+                        <select name="sinonimo" id="">
+                            <?php foreach($dados as $d) { ?>
+                            <option value="1"><?= $d['palavra'] ?></option>
+                            <?php } ?>
+                        </select>
                     </div>
 
                     <input type="submit" value="Enviar"/>
