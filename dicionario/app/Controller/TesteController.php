@@ -48,17 +48,7 @@ class TesteController
         $dados = $q->select('palavras');
          //chama a view
         require './app/views/index.php';
-    }
-
-    public function linksignificado()
-    {
-        //conexao com banco
-        $q = new QueryBuilder();
-        //busca os dados, guarda em uma var
-        $dados = $q->select('palavras');
-        //chama a view        
-        require './app/views/linksignificado.php';
-    }
+    }   
 
     public function linksinonimo()
     {
@@ -80,24 +70,19 @@ class TesteController
         require './app/views/linkdicionario.php';
     }
 
-    //public function linkarsignificado()
+    //public function linkarsinonimo()
     //{
     //    //receber os dados
-    //    $dados['significado'] = $_POST['significado'];
+    //    $dados['id'] = $_POST['id'];
     //
     //    //conectar com o banco
     //    $q = new QueryBuilder();
     //
     //    //enviar os dados para o banco
-    //    $q->insert('significado', $dados);
+    //    $q->insert('id', $dados);
     //
     //    //redirecionar
     //    header('Location: /');
-    //}
-
-    //public function linkarsinonimo()
-    //{
-
     //}
 
     //public function linkardicionario()

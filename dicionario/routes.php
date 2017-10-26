@@ -28,10 +28,6 @@ switch ($uri) {
         $testeController->salvarpalavra();
         break;  
 
-    case '/link/significado':
-        $testeController->linksignificado();
-        break;
-
     case '/link/sinonimo':
         $testeController->linksinonimo();
         break;
