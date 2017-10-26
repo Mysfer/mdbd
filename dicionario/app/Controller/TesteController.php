@@ -25,6 +25,23 @@ class TesteController
 
     }
 
+    public function salvardicionario()
+    {
+        //receber os dados
+        $dados['nome'] = $_POST['nome'];
+        $dados['autor'] = $_POST['autor'];
+        $dados['editora'] = $_POST['editora'];
+
+        //conectar com o banco
+        $q = new QueryBuilder();
+
+        //enviar os dados para o banco
+        $q->insert('dicionario', $dados);
+
+        //devolve a pagina cadastrar dicionario
+        header('Location: /cadastrar/dicionario');
+    }   
+
     public function consultar()
     {
         //conexao com banco
@@ -70,42 +87,38 @@ class TesteController
         require './app/views/linkdicionario.php';
     }
 
-    //public function linkarsinonimo()
-    //{
-    //    //receber os dados
-    //    $dados['id'] = $_POST['id'];
-    //
-    //    //conectar com o banco
-    //    $q = new QueryBuilder();
-    //
-    //    //enviar os dados para o banco
-    //    $q->insert('id', $dados);
-    //
-    //    //redirecionar
-    //    header('Location: /');
-    //}
-
-    //public function linkardicionario()
-    //{
-
-    //}
-
-    public function salvardicionario()
+    public function linkarsinonimo()
     {
         //receber os dados
-        $dados['nome'] = $_POST['nome'];
-        $dados['autor'] = $_POST['autor'];
-        $dados['editora'] = $_POST['editora'];
-
+        $dados['palavras_id'] = $_POST['id'];
+        $dados['palavras_id1'] = $_POST['id2'];    
+    
         //conectar com o banco
         $q = new QueryBuilder();
-
+    
         //enviar os dados para o banco
-        $q->insert('dicionario', $dados);
+        $q->insert('sinonimo', $dados);
+    
+        //redirecionar
+        header('Location: /');
+    }
 
-        //devolve a pagina cadastrar dicionario
-        header('Location: /cadastrar/dicionario');
-    }    
+    public function linkardicionario()
+    {
+        //receber os dados
+        $dados['table1_id_dicionario'] = $_POST['id2'];
+        $dados['palavras_id'] = $_POST['id'];    
+    
+        //conectar com o banco
+        $q = new QueryBuilder();
+    
+        //enviar os dados para o banco
+        $q->insert('pertence', $dados);
+    
+        //redirecionar
+        header('Location: /');
+    }
+
 
 
 

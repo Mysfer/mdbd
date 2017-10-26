@@ -21,7 +21,7 @@
 
                     <div class="form-group">
                         <label for="palavra">Palavra a ser linkada:</label>
-                        <select name="palavra" id="">
+                        <select name="id" id="">
                             <?php foreach($dados as $d) { ?>
                             <option value="<?= $d['id'] ?>"><?= $d['palavra'] ?></option>
                             <?php } ?>
@@ -29,7 +29,7 @@
                     </div>
                     <div class="form-group">
                         <label for="sinonimo">Sinonimo</label>
-                        <select name="sinonimo" id="">
+                        <select name="id2" id="">
                             <?php foreach($dados as $d) { ?>
                             <option value="<?= $d['id'] ?>"><?= $d['palavra'] ?></option>
                             <?php } ?>
