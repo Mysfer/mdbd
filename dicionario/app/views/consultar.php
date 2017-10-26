@@ -17,6 +17,7 @@
                 <th>Palavra</th>
                 <th>Pronúncia</th>
                 <th>Origem(etimologia)</th>
+                <th>Significado</th>
                 
             </tr>
         </thead>
@@ -28,6 +29,7 @@
                 <td><?= $d['palavra'] ?></td>
                 <td><?= $d['pronuncia'] ?></td>
                 <td><?= $d['origem'] ?></td>
+                <td><?= $d['significado'] ?></td>
                 
             </tr>
             <?php  } ?>

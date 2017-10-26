@@ -34,7 +34,7 @@ class TesteController
         $dados = $q->select('palavras');
         //chama a view
         //require './app/views/consultar.php';
-        require './app/views/linksignificado.php';
+        require './app/views/consultar.php';
 
     }
     
