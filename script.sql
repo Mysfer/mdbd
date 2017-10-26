@@ -25,6 +25,7 @@ CREATE TABLE IF NOT EXISTS `dicionario`.`palavras` (
   `palavra` VARCHAR(45) NULL,
   `pronuncia` VARCHAR(45) NULL,
   `origem` VARCHAR(45) NULL,
+  `significado` VARCHAR(120) NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -83,39 +84,6 @@ CREATE TABLE IF NOT EXISTS `dicionario`.`pertence` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `dicionario`.`significado`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `dicionario`.`significado` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `significado` VARCHAR(45) NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `dicionario`.`pivot`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `dicionario`.`pivot` (
-  `significado_id` INT NOT NULL,
-  `palavras_id` INT NOT NULL,
-  PRIMARY KEY (`significado_id`, `palavras_id`),
-  INDEX `fk_significado_has_palavras_palavras1_idx` (`palavras_id` ASC),
-  INDEX `fk_significado_has_palavras_significado1_idx` (`significado_id` ASC),
-  CONSTRAINT `fk_significado_has_palavras_significado1`
-    FOREIGN KEY (`significado_id`)
-    REFERENCES `dicionario`.`significado` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_significado_has_palavras_palavras1`
-    FOREIGN KEY (`palavras_id`)
-    REFERENCES `dicionario`.`palavras` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
