@@ -23,7 +23,7 @@
                         <label for="palavra">Palavra a ser linkada:</label>
                         <select name="palavra" id="">
                             <?php foreach($dados as $d) { ?>
-                            <option value="1"><?= $d['palavra'] ?></option>
+                            <option value="<?= $d['id'] ?>"><?= $d['palavra'] ?></option>
                             <?php } ?>
                         </select>
                     </div>
