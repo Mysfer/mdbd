@@ -34,7 +34,7 @@
                         <input class="form-control" type="text" name="editora" value="">
                     </div>
 
-                    <button class="btn btn-success btn-lg" type="">Enviar</button>
+                    <button class="btn" type="">Enviar</button>
                 </form>
             </div>
         </div>

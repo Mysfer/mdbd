@@ -25,16 +25,21 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="idade">Pronúncia</label>
+                        <label for="pronuncia">Pronúncia</label>
                         <input class="form-control" type="text" name="pronuncia" value="">
                     </div>
 
                     <div class="form-group">
-                        <label for="idade">Origem</label>
+                        <label for="origem">Origem</label>
                         <input class="form-control" type="text" name="origem" value="">
                     </div>
 
-                    <button class="btn btn-success btn-lg" type="">Enviar</button>
+                    <div class="form-group">
+                        <label for="significado">Significado</label>
+                        <textarea name="significado" rows="4" cols="10"></textarea>
+                    </div>
+
+                    <button class="btn" type="">Enviar</button>
                 </form>
             </div>
         </div>
