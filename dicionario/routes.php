@@ -34,19 +34,15 @@ switch ($uri) {
 
     case '/link/dicionario':
         $testeController->linkdicionario();
-        break;     
+        break;    
 
-    //case '/linkarsignificado':
-    //    $testeController->linkarsignificado();
-    //    break; 
+    case '/linkarsinonimo':
+        $testeController->linkarsinonimo();
+        break;
 
-    //case '/linkarsinonimo':
-    //    $testeController->linkarsinonimo();
-    //    break;
-
-    //case '/linkardicionario':
-    //    $testeController->linkardicionario();
-    //    break;
+    case '/linkardicionario':
+        $testeController->linkardicionario();
+        break;
     
     case '/cadastrar/dicionario':
         require './app/views/caddicionario.php';

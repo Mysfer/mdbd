@@ -100,7 +100,7 @@ class TesteController
         $q->insert('sinonimo', $dados);
     
         //redirecionar
-        header('Location: /');
+        header('Location: /link/sinonimo');
     }
 
     public function linkardicionario()
@@ -116,7 +116,7 @@ class TesteController
         $q->insert('pertence', $dados);
     
         //redirecionar
-        header('Location: /');
+        header('Location: /link/dicionario');
     }
 
 
