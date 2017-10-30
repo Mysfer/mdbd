@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="/public/css/foundation.css">
     </head>
     <body>
-        <navbar class="top-bar foundation-bar">
+        <navbar class="top-bar foundation-bar h4">
             <nav>
                 <a href="/">Index</a>
             </nav>
@@ -30,7 +30,7 @@
                 <a href="/faleconosco">Fale conosco</a>
             </nav>
         </navbar>
-        <ul>
+        <ul class="h5">
             <?php foreach($dados as $d) { ?>
                 
                 <li><a href="/consultar?id=<?= $d['id'] ?>"><?= $d['palavra'] ?></a></li>
