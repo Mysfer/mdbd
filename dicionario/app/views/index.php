@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="/public/css/foundation.css">
     </head>
     <body>
-        <div class="menu submenu-toggle foundation-bar h3">   
-            <nav>
+        <div class="foundation-bar">   
+            <nav class="submenu-toggle h3">
                 <ul>
                     <li><a href="/">Index</a></li>
                     <li><a href="/cadastro/palavra">Cadastrar Palavra</a></li>                    
@@ -16,7 +16,6 @@
                     <li><a href="/link/sinonimo">Linkar Sinonimo</a></li>
                     <li><a href="/link/dicionario">Linkar Dicionario</a></a></li>
                     <li><a href="/faleconosco">Fale conosco</a></li>
-                    
                 </ul>
             </nav>
         </div>
