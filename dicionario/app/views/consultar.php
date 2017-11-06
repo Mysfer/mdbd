@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/public/css/foundation.css">
+        <link rel="stylesheet" href="/public/css/foundation.css">
+        <link rel="stylesheet" href="/public/css/app.css">
 
     <title>Document</title>
 </head>
@@ -35,5 +36,9 @@
             <?php  } ?>
         </tbody>
     </table>
+        <script src="./public/js/vendor/jquery.js"></script>
+        <script src="./public/js/vendor/what-input.js"></script>
+        <script src="./public/js/vendor/foundation.js"></script>
+        <script src="./public/js/app.js"></script>
 </body>
 </html>

@@ -8,12 +8,7 @@ switch ($uri) {
         
         $testeController->index();
         break;
-
-    case '/template':
-
-        require './app/views/template.html';
-        break;
-
+ 
     case '/cadastro/palavra':
         
         require './app/views/cadpalavra.php';
