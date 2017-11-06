@@ -13,7 +13,7 @@
 <body>
 
     <div class="grid-x grid-padding-x">
-            <div class="large-12 cell">
+            <div class="large-6 medium-6 cell">
 
                 <h1 class="page-header">Página de cadastro</h1>
 

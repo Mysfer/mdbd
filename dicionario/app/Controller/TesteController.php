@@ -13,6 +13,7 @@ class TesteController
         $dados['palavra'] = $_POST['palavra'];
         $dados['pronuncia'] = $_POST['pronuncia'];
         $dados['origem'] = $_POST['origem'];
+        $dados['significado'] = $_POST['significado'];
 
         //conectar com o banco
         $q = new QueryBuilder();

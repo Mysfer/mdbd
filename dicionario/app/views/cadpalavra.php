@@ -13,11 +13,11 @@
 <body>
 
     <div class="grid-x grid-padding-x">
-            <div class="large-12 cell">
+            <div class="large-6 medium-6 cell">
 
                 <h1 class="page-header">Página de cadastro</h1>
 
-                <form method="post" action="/cadastrarpalavra-salvar">
+                <form method="post" action="/salvarpalavra">
 
                     <div class="input-group">
                         <label for="palavra">Palavra</label>
