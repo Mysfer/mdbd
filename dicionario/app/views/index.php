@@ -11,7 +11,7 @@
         <header>
             <h1>Dicionline Emira</h1>
         </header>
-        <section class='grid-x grid-padding-x'>   
+        <section class='grid-x grid-padding-x lateral-section'>   
             <nav class="large-6 medium-6 cell h3">
                 <ul>
                     <li><a href="/">Index</a></li>
