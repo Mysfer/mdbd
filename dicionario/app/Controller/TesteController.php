@@ -68,24 +68,24 @@ class TesteController
         require './app/views/index.php';
     }   
 
-    public function linksinonimo()
+    public function vsinonimo()
     {
         //conexao com banco
         $q = new QueryBuilder();
         //busca os dados, guarda em uma var
         $dados = $q->select('palavras');
         //chama a view        
-        require './app/views/linksinonimo.php';
+        require './app/views/vsinonimo.php';
     }
 
-    public function linkdicionario()
+    public function vdicionario()
     {
         //conexao com banco
         $q = new QueryBuilder();
         //busca os dados, guarda em uma var
         $dados = $q->select('palavras');
         //chama a view        
-        require './app/views/linkdicionario.php';
+        require './app/views/vdicionario.php';
     }
 
     public function linkarsinonimo()

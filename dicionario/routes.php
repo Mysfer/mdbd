@@ -23,12 +23,12 @@ switch ($uri) {
         $testeController->salvarpalavra();
         break;  
 
-    case '/link/sinonimo':
-        $testeController->linksinonimo();
+    case '/vincular/sinonimo':
+        $testeController->vsinonimo();
         break;
 
-    case '/link/dicionario':
-        $testeController->linkdicionario();
+    case '/vincular/dicionario':
+        $testeController->vdicionario();
         break;    
 
     case '/linkarsinonimo':
