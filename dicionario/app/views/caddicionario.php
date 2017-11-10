@@ -11,14 +11,15 @@
 </head>
 
 <body>
-
-    <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-6 cell">
-
-                <h1 class="page-header">Página de cadastro</h1>
-
+    <!-- logotipo e cabeçalho -->
+        <header class="large-12 cell">
+            <h1>Dicionline Emira</h1>
+        </header>
+        <!-- corpo do site -->
+        <section class='grid-x grid-padding-x'>
+            <!-- parte variante -->
+            <div class="large-9 medium-9 small-9 cell">
                 <form method="post" action="/salvardicionario">
-
                     <div class="input-group">
                         <label for="nome">Nome</label>
                         <input class="input-group-field" type="text" name="nome" id="nome" value="">
@@ -33,11 +34,24 @@
                         <label for="editora">Editora</label>
                         <input class="input-group-field" type="text" name="editora" value="">
                     </div>
-
                     <button class="success button" type="">Enviar</button>
                 </form>
             </div>
-    </div>
+            <!-- barra vertical lateral -->
+            <div class="large-3 medium-3 small-3 cell">
+                <nav class="h3">
+                    <ul>
+                        <a href="/"><li>Home</li></a>
+                        <a href="/cadastro/palavra"><li>Cadastrar Palavra</li></a>                    
+                        <a href="/cadastro/dicionario"><li>Cadastrar Dicionario</li></a>
+                        <a href="/link/sinonimo"><li>Linkar Sinonimo</li></a>
+                        <a href="/link/dicionario"><li>Linkar Dicionario</li></a>
+                        <a href="/faleconosco"><li>Fale conosco</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    
         <script src="./public/js/vendor/jquery.js"></script>
         <script src="./public/js/vendor/what-input.js"></script>
         <script src="./public/js/vendor/foundation.js"></script>

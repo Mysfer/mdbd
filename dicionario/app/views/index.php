@@ -10,7 +10,7 @@
     <body>
         <!-- logotipo e cabeçalho -->
         <header class="large-12 cell">
-            <h1>Dicionline Emira</h1>
+            <img src="/public/images/logo.png"/>
         </header>
         <!-- corpo do site -->
         <section class='grid-x grid-padding-x'>
@@ -29,16 +29,15 @@
             <div class="large-3 medium-3 small-3 cell">
                 <nav class="h3">
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/cadastro/palavra">Cadastrar Palavra</a></li>                    
-                        <li><a href="/cadastro/dicionario">Cadastrar Dicionario</a></li>
-                        <li><a href="/link/sinonimo">Linkar Sinonimo</a></li>
-                        <li><a href="/link/dicionario">Linkar Dicionario</a></a></li>
-                        <li><a href="/faleconosco">Fale conosco</a></li>
+                        <a href="/"><li>Home</li></a>
+                        <a href="/cadastro/palavra"><li>Cadastrar Palavra</li></a>                    
+                        <a href="/cadastro/dicionario"><li>Cadastrar Dicionario</li></a>
+                        <a href="/link/sinonimo"><li>Linkar Sinonimo</li></a>
+                        <a href="/link/dicionario"><li>Linkar Dicionario</li></a>
+                        <a href="/faleconosco"><li>Fale conosco</li></a>
                     </ul>
                 </nav>
             </div>
-
         </section>
 
         <script src="./public/js/vendor/jquery.js"></script>

@@ -1,11 +1,14 @@
-.cell, .cell > nav > ul > li {    
-    background: linear-gradient(azure, lightblue);
-    background: -webkit-linear-gradient(azure, lightblue);  /* safari */
-    background: -o-linear-gradient(azure, lightblue);       /* opera */
-    background: -moz-linear-gradient(azure, lightblue);     /* mozila */
+.cell, .cell > nav > ul > a > li {   
+    background: -webkit-linear-gradient(azure, #c4eeff);  /* safari */
+    background: -o-linear-gradient(azure, #c4eeff);       /* opera */
+    background: -moz-linear-gradient(azure, #c4eeff);     /* mozila */
+    background: linear-gradient(azure, #c4eeff);
     border: 1px solid lightblue;
     border-radius: 6px;
     margin-top: 1px;
+}
+.cell > nav > ul > a > li:hover {
+    background: lightskyblue;    
 }
 ul {
     list-style: none;    
