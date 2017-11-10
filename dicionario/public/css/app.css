@@ -4,14 +4,14 @@
     background: -moz-linear-gradient(azure, #c4eeff);     /* mozila */
     background: linear-gradient(azure, #c4eeff);
     border: 1px solid lightblue;
-    border-radius: 6px;
+    border-radius: 4px;
     margin-top: 1px;
 }
 .cell > nav > ul > a > li:hover {
     background: lightskyblue;    
 }
-ul {
+ul > a, ul > li {
     list-style: none;    
-    margin: 0px;
     margin-top: 2px;
+    color: black;     
 }

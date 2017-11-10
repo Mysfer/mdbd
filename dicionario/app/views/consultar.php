@@ -13,27 +13,66 @@
     <table class="table table-striped">
         <thead>
         
-            <tr>
-                
-                <th>Palavra</th>
-                <th>Pronúncia</th>
-                <th>Origem(etimologia)</th>
-                <th>Significado</th>
-                
+            <tr>                
+                <th>Palavra</th>                
             </tr>
         </thead>
-
-        <tbody>
-            <?php foreach($dados as $d) { ?>
+        <tbody>            
+            <tr>                
+                <td><?= $dados['palavra'] ?></td>                
+            </tr>            
+        </tbody>
+        <thead>
             <tr>
-                
-                <td><?= $d['palavra'] ?></td>
-                <td><?= $d['pronuncia'] ?></td>
-                <td><?= $d['origem'] ?></td>
-                <td><?= $d['significado'] ?></td>
-                
+                <th>Pronúncia</th>
             </tr>
-            <?php  } ?>
+        </thead>
+        <tbody>            
+            <tr>                
+                <td><?= $dados['pronuncia'] ?></td>                                               
+            </tr>            
+        </tbody>
+        <thead>
+            <tr>                
+                <th>Origem(etimologia)</th>
+            </tr>
+        </thead>
+        <tbody>            
+            <tr>                
+                <td><?= $dados['origem'] ?></td>                             
+            </tr>                    
+        </tbody>
+        <thead>
+            <tr>
+                <th>Significado</th>
+            </tr>
+        </thead>
+        <tbody>            
+            <tr>
+                <td><?= $dados['significado'] ?></td>              
+            </tr>            
+        </tbody>
+        <thead>
+            <tr>
+                <th>Dicionario</th>
+            </tr>
+        </thead>
+        <tbody>            
+            <tr>
+                <?php foreach($dicionario as $d) { ?>
+                <td><?= $d['nome'] ?></td>
+                <?php } ?>
+            </tr>            
+        </tbody>
+        <thead>
+            <tr>
+                <th>Sinonimos</th>
+            </tr>
+        </thead>
+        <tbody>            
+            <tr>
+                <td><?= $sinonimos['nome'] ?></td>                
+            </tr>            
         </tbody>
     </table>
         <script src="./public/js/vendor/jquery.js"></script>

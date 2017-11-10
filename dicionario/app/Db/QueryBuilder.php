@@ -82,4 +82,48 @@ class QueryBuilder
             die($ex->getMessage());
         }
     }
+
+    //Função que recebe o nome da tabela e um id
+// e retorna os dados de um determinado aluno
+
+public function innerdicio($id)
+{
+
+  $sql = "select * from dicionario
+inner join pertence 
+on dicionario.id_dicionario = table1_id_dicionario
+inner join palavras
+on palavras.id = pertence.palavras_id
+where palavras.id = :id"; 
+  $s = $this->pdo->prepare($sql);
+
+  $s->bindParam(':id', $id);
+
+  try{
+      $s->execute();
+
+      return $s->fetch(\PDO::FETCH_ASSOC);
+
+  }  catch(\PDOException $e){
+       die($e->getMessage());
+  }
+}
+
+public function selectWhere($id)
+{
+
+  $sql = "select * from palavras where id = :id"; 
+  $s = $this->pdo->prepare($sql);
+
+  $s->bindParam(':id', $id);
+
+  try{
+      $s->execute();
+
+      return $s->fetch(\PDO::FETCH_ASSOC);
+
+  }  catch(\PDOException $e){
+       die($e->getMessage());
+  }
+}
 }
