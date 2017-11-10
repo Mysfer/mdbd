@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `dicionario`.`palavras` (
   `palavra` VARCHAR(45) NULL,
   `pronuncia` VARCHAR(45) NULL,
   `origem` VARCHAR(45) NULL,
-  `significado` VARCHAR(120) NULL,
+  `significado` VARCHAR(150) NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
