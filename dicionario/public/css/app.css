@@ -1,17 +1,29 @@
-.cell, .cell > nav > ul > a > li {   
+body {
+    background: azure;
+    
+}
+.cell {   
     background: -webkit-linear-gradient(azure, #c4eeff);  /* safari */
     background: -o-linear-gradient(azure, #c4eeff);       /* opera */
     background: -moz-linear-gradient(azure, #c4eeff);     /* mozila */
     background: linear-gradient(azure, #c4eeff);
     border: 1px solid lightblue;
     border-radius: 4px;
-    margin-top: 1px;
 }
-.cell > nav > ul > a > li:hover {
+.cell > div > a > li, .cell > ul > li {
+    background: -webkit-linear-gradient(#c4ffff, #c4eeff);  /* safari */
+    background: -o-linear-gradient(#c4ffff, #c4eeff);       /* opera */
+    background: -moz-linear-gradient(#c4ffff, #c4eeff);     /* mozila */
+    background: linear-gradient(#c4ffff, #c4eeff);
+    margin-top: 1px;    
+    list-style: none;
+    color: black;  
+    border: 1px solid lightblue;
+    border-radius: 4px;  
+}
+.cell > div > a > li:hover, .cell > ul > li:hover {
     background: lightskyblue;    
 }
-ul > a, ul > li {
-    list-style: none;    
+.cell > form, .cell > table {
     margin-top: 2px;
-    color: black;     
 }

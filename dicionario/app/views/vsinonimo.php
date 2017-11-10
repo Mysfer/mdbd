@@ -11,16 +11,19 @@
 </head>
 
 <body>
-
-    <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-6 cell">
-
-                <h1 class="page-header">Página de cadastro</h1>
-
+        <!-- logotipo e cabeçalho -->
+            <header class="large-12 medium-12 small-12 cell">
+                <img src="/public/images/logo.png"/>
+            </header>
+        <!-- corpo do site -->
+        <section class='grid-x grid-padding-x'>
+            <!-- parte variante -->
+            <div class="large-9 medium-9 small-9 cell">
+                <h2>Vincular sinônimos:</h2>
                 <form method="post" action="/linkarsinonimo">
 
                     <div class="form-group">
-                        <label for="palavra">Palavra a ser linkada:</label>
+                        <label for="palavra">Palavra a ser vinculada:</label>
                         <select name="id" id="">
                             <?php foreach($dados as $d) { ?>
                             <option value="<?= $d['id'] ?>"><?= $d['palavra'] ?></option>
@@ -28,7 +31,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="sinonimo">Sinonimo</label>
+                        <label for="sinonimo">Sinônimo</label>
                         <select name="id2" id="">
                             <?php foreach($dados as $d) { ?>
                             <option value="<?= $d['id'] ?>"><?= $d['palavra'] ?></option>
@@ -39,7 +42,19 @@
                     <input class="success button" type="submit" value="Enviar"/>
                 </form>
             </div>
-    </div>
+            <!-- barra vertical lateral -->
+            <div class="large-3 medium-3 small-3 cell">
+                <div class="icon-bar vertical six-up h3">
+                    <a href="/"><li>Home</li></a>
+                    <a href="/cadastro/palavra"><li>Cadastrar Palavra</li></a>                    
+                    <a href="/cadastro/dicionario"><li>Cadastrar Dicionario</li></a>
+                    <a href="/vincular/sinonimo"><li>Vincular Sinonimo</li></a>
+                    <a href="/vincular/dicionario"><li>Vincular Dicionario</li></a>
+                    <a href="/faleconosco"><li>Fale conosco</li></a>
+                </div>
+            </div>
+        </section>
+  
         <script src="./public/js/vendor/jquery.js"></script>
         <script src="./public/js/vendor/what-input.js"></script>
         <script src="./public/js/vendor/foundation.js"></script>

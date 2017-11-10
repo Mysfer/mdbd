@@ -9,7 +9,7 @@
     </head>
     <body>
         <!-- logotipo e cabeçalho -->
-        <header class="large-12 cell">
+        <header class="large-12 medium-12 small-12 cell">
             <img src="/public/images/logo.png"/>
         </header>
         <!-- corpo do site -->
@@ -27,17 +27,15 @@
             </div>
             <!-- barra vertical lateral -->
             <div class="large-3 medium-3 small-3 cell">
-                <nav class="h3">
-                    <ul>
-                        <a href="/"><li>Home</li></a>
-                        <a href="/cadastro/palavra"><li>Cadastrar Palavra</li></a>                    
-                        <a href="/cadastro/dicionario"><li>Cadastrar Dicionario</li></a>
-                        <a href="/link/sinonimo"><li>Linkar Sinonimo</li></a>
-                        <a href="/link/dicionario"><li>Linkar Dicionario</li></a>
-                        <a href="/faleconosco"><li>Fale conosco</li></a>
-                    </ul>
-                </nav>
-            </div>
+                <div class="icon-bar vertical six-up h3">
+                    <a href="/"><li>Home</li></a>
+                    <a href="/cadastro/palavra"><li>Cadastrar Palavra</li></a>                    
+                    <a href="/cadastro/dicionario"><li>Cadastrar Dicionario</li></a>
+                    <a href="/vincular/sinonimo"><li>Vincular Sinonimo</li></a>
+                    <a href="/vincular/dicionario"><li>Vincular Dicionario</li></a>
+                    <a href="/faleconosco"><li>Fale conosco</li></a>
+                </div>
+            </div>                
         </section>
 
         <script src="./public/js/vendor/jquery.js"></script>
