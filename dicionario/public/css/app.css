@@ -1,12 +1,14 @@
-.lateral-section {
-    position: fixed;
-    right: 5px;    
-    background-color: lightgray;    
+.cell, .cell > nav > ul > li {    
+    background: linear-gradient(azure, lightblue);
+    background: -webkit-linear-gradient(azure, lightblue);  /* safari */
+    background: -o-linear-gradient(azure, lightblue);       /* opera */
+    background: -moz-linear-gradient(azure, lightblue);     /* mozila */
+    border: 1px solid lightblue;
+    border-radius: 6px;
+    margin-top: 1px;
 }
-.lateral-section > nav > ul > li {
-    padding: 4px;
-    background-color: azure;
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
+ul {
+    list-style: none;    
+    margin: 0px;
+    margin-top: 2px;
 }

@@ -8,12 +8,14 @@
         <link rel="stylesheet" href="/public/css/app.css">
     </head>
     <body>
-        <header>
+        <!-- logotipo e cabeçalho -->
+        <header class="large-12 cell">
             <h1>Dicionline Emira</h1>
         </header>
+        <!-- corpo do site -->
         <section class='grid-x grid-padding-x'>
-
-            <div class="large-8 medium-8 cell">
+            <!-- parte variante -->
+            <div class="large-9 medium-9 small-9 cell">
                 <h2>Sugestões:</h2>
                 <ul class="h5">
                     <?php foreach($dados as $d) { ?>
@@ -23,11 +25,11 @@
                     <?php  } ?>
                 </ul>
             </div>
-
-            <div class="large-2 medium-2 cell h3">
-                <nav>
+            <!-- barra vertical lateral -->
+            <div class="large-3 medium-3 small-3 cell">
+                <nav class="h3">
                     <ul>
-                        <li><a href="/">Index</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="/cadastro/palavra">Cadastrar Palavra</a></li>                    
                         <li><a href="/cadastro/dicionario">Cadastrar Dicionario</a></li>
                         <li><a href="/link/sinonimo">Linkar Sinonimo</a></li>
