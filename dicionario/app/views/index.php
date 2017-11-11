@@ -20,7 +20,7 @@
                 <ul class="h5">
                     <?php foreach($dados as $d) { ?>
                         
-                        <li><a href="/consultar?id=<?= $d['id'] ?>"><?= $d['palavra'] ?></a></li>
+                        <li><a href="/consultar/palavra?id=<?= $d['id'] ?>"><?= $d['palavra'] ?></a></li>
 
                     <?php  } ?>
                 </ul>
