@@ -47,10 +47,17 @@ class TesteController
     {
         //conexao com banco
         $q = new QueryBuilder();
+
+        //recebe id da palavra
         $id = $_GET['id'];
-        //busca os dados, guarda em uma var
+
+        //coleta dos dados que serão usados
         $dados = $q->selectWhere($id);
-        $dicionario = $q->innerdicio($id);        
+
+        $dicionario = $q->innerdicio($id);  
+
+        $sinonimo = $q->sinonimo($id);  
+        //devolve a pagina de consulta 
         require './app/views/consultar.php';
 
     }

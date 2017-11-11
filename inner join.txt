@@ -1,0 +1,6 @@
+SELECT dicionario.nome, palavras.palavra FROM dicionario 
+inner join pertence
+on dicionario.id_dicionario = pertence.table1_id_dicionario
+inner join palavras
+on palavras.id = pertence.palavras_id
+where palavras.id = :id";

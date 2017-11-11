@@ -77,7 +77,7 @@
                     </thead>
                     <tbody>            
                         <tr>
-                            <td><?= $sinonimos['nome'] ?></td>                
+                            <td><?= $sinonimo['palavra'] ?></td>                
                         </tr>            
                     </tbody>
                 </table>

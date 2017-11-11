@@ -86,28 +86,29 @@ class QueryBuilder
     //Função que recebe o nome da tabela e um id
 // e retorna os dados de um determinado aluno
 
-public function innerdicio($id)
-{
+    public function innerdicio($id)
+    {
 
-  $sql = "select * from dicionario
-inner join pertence 
-on dicionario.id_dicionario = table1_id_dicionario
-inner join palavras
-on palavras.id = pertence.palavras_id
-where palavras.id = :id"; 
-  $s = $this->pdo->prepare($sql);
+    $sql = "select dicionario.nome from dicionario
+    inner join pertence 
+    on dicionario.id_dicionario = table1_id_dicionario
+    inner join palavras
+    on palavras.id = pertence.palavras_id
+    where palavras.id = :id"; 
+    $s = $this->pdo->prepare($sql);
 
-  $s->bindParam(':id', $id);
+    $s->bindParam(':id', $id);
 
-  try{
-      $s->execute();
+    try{
+        $s->execute();
 
-      return $s->fetch(\PDO::FETCH_ASSOC);
+        return $s->fetch(\PDO::FETCH_ASSOC);
 
-  }  catch(\PDOException $e){
-       die($e->getMessage());
-  }
-}
+    }  catch(\PDOException $e)
+        {
+        die($e->getMessage());
+        }
+    }
 
 public function selectWhere($id)
 {
@@ -122,8 +123,30 @@ public function selectWhere($id)
 
       return $s->fetch(\PDO::FETCH_ASSOC);
 
-  }  catch(\PDOException $e){
+  }  catch(\PDOException $e)
+    {
        die($e->getMessage());
-  }
+    }
 }
+    public function sinonimo($id)
+    {
+
+    $sql = "select * from palavras
+left join sinonimo
+on sinonimo.palavras_id1 = palavras.id
+where sinonimo.palavras_id = :id";; 
+    $s = $this->pdo->prepare($sql);
+
+    $s->bindParam(':id', $id);
+
+    try{
+        $s->execute();
+
+        return $s->fetch(\PDO::FETCH_ASSOC);
+
+    }  catch(\PDOException $e)
+        {
+        die($e->getMessage());
+        }
+    }
 }
