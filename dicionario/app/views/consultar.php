@@ -77,7 +77,9 @@
                     </thead>
                     <tbody>            
                         <tr>
-                            <td><?= $sinonimo['palavra'] ?></td>                
+                        <?php foreach ($sinonimo as $s){ ?>
+                            <td><?= $s ?></td>       
+                        <?php }?>         
                         </tr>            
                     </tbody>
                 </table>

@@ -45,6 +45,8 @@ class TesteController
 
     public function consultar()
     {
+
+        $sinonimo = [];
         //conexao com banco
         $q = new QueryBuilder();
 
@@ -56,7 +58,10 @@ class TesteController
 
         $dicionario = $q->innerdicio($id);  
 
-        $sinonimo = $q->sinonimo($id);  
+        $sinonimo[] = $q->sinonimo($id); 
+        print_r($sinonimo);
+        die();
+
         //devolve a pagina de consulta 
         require './app/views/consultar.php';
 
@@ -107,7 +112,7 @@ class TesteController
         $q->insert('sinonimo', $dados);
     
         //redirecionar
-        header('Location: /link/sinonimo');
+        header('Location: /vincular/sinonimo');
     }
 
     public function linkardicionario()
@@ -123,7 +128,7 @@ class TesteController
         $q->insert('pertence', $dados);
     
         //redirecionar
-        header('Location: /link/dicionario');
+        header('Location: /vincular/dicionario');
     }
 
 
