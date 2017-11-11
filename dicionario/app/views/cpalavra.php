@@ -77,7 +77,9 @@
                     </thead>
                     <tbody>            
                         <tr>
-                            <td><a href="/consultar/palavra?id=<?= $sinonimo['id'] ?>"><?= $sinonimo['palavra'] ?></td>                
+                        <?php foreach ($sinonimo as $s){ ?>
+                            <td><a href="/consultar/palavra?id=<?= $s['id'] ?>"><?= $s['palavra'] ?></td>
+                        <?php }?>
                         </tr>            
                     </tbody>
                 </table>
