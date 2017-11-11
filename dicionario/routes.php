@@ -47,8 +47,12 @@ switch ($uri) {
         $testeController->salvardicionario();
         break;  
 
-    case '/consultar':
-        $testeController->consultar();
+    case '/consultar/palavra':
+        $testeController->consultarpalavra();
+        break;
+    
+    case '/consultar/dicionario':
+        $testeController->consultardicionario();
         break;
 
     default:

@@ -43,7 +43,7 @@ class TesteController
         header('Location: /cadastrar/dicionario');
     }   
 
-    public function consultar()
+    public function consultarpalavra()
     {
         //conexao com banco
         $q = new QueryBuilder();
@@ -58,8 +58,22 @@ class TesteController
 
         $sinonimo = $q->sinonimo($id);  
         //devolve a pagina de consulta 
-        require './app/views/consultar.php';
+        require './app/views/cpalavra.php';
+    }
 
+    public function consultardicionario()
+    {
+        //conexao com banco
+        $q = new QueryBuilder();
+
+        //recebe id da palavra
+        $id = $_GET['id'];
+
+        //coleta dos dados que serão usados
+        $dados = $q->selectWhere($id);
+
+        //devolve a pagina de consulta 
+        require './app/views/cdicionario.php';
     }
     
     public function index()
@@ -90,6 +104,7 @@ class TesteController
         $q = new QueryBuilder();
         //busca os dados, guarda em uma var
         $dados = $q->select('palavras');
+        $dados2 = $q->select('dicionario');
         //chama a view        
         require './app/views/vdicionario.php';
     }
@@ -125,8 +140,4 @@ class TesteController
         //redirecionar
         header('Location: /link/dicionario');
     }
-
-
-
-
 }

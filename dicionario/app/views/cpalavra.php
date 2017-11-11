@@ -77,7 +77,7 @@
                     </thead>
                     <tbody>            
                         <tr>
-                            <td><?= $sinonimo['palavra'] ?></td>                
+                            <td><a href="/consultar/palavra?id=<?= $sinonimo['id'] ?>"><?= $sinonimo['palavra'] ?></td>                
                         </tr>            
                     </tbody>
                 </table>
