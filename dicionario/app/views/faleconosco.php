@@ -38,7 +38,9 @@
                         <textarea name="mensagem" rows="4" cols="10"></textarea>
                     </div>
                     <br>
-                    <button class="success button" type="">Enviar</button>
+                    <div class="text-right">
+                        <button class="success button" type="">Enviar</button>
+                    </div>
                 </form>
             </div>
             <!-- barra vertical lateral -->
