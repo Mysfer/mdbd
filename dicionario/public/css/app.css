@@ -1,4 +1,4 @@
-header {
+header > .cell {    
     background: -webkit-linear-gradient(#def9f9, #d2edf7);  /* safari */
     background: -o-linear-gradient(#def9f9, #d2edf7);       /* opera */
     background: -moz-linear-gradient(#def9f9, #d2edf7);     /* mozila */

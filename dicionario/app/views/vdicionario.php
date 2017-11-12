@@ -12,8 +12,10 @@
 
 <body>
         <!-- logotipo e cabeçalho -->
-        <header class="large-12 medium-12 small-12 cell">
-            <img src="/public/images/logo.png"/>
+        <header class="large-12 medium-12 small-12">
+            <div class="cell">
+                <img src="/public/images/logo.png"/>
+            </div>
         </header>
         <!-- corpo do site -->
         <section class='grid-x grid-padding-x'>
