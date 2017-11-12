@@ -31,7 +31,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="sinonimo">Sinônimo</label>
+                        <label for="sinonimo">Sinônimo:</label>
                         <select name="id2" id="">
                             <?php foreach($dados as $d) { ?>
                             <option value="<?= $d['id'] ?>"><?= $d['palavra'] ?></option>

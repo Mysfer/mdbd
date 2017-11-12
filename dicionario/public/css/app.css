@@ -1,19 +1,13 @@
-body {
-    background: azure;
-    
-}
 header {
+    background: -webkit-linear-gradient(#def9f9, #d2edf7);  /* safari */
+    background: -o-linear-gradient(#def9f9, #d2edf7);       /* opera */
+    background: -moz-linear-gradient(#def9f9, #d2edf7);     /* mozila */
+    background: linear-gradient(#def9f9, #d2edf7);
     border: solid lightblue 2px;
     border-radius: 4px;
 }
 footer {
     background: lightblue;
-}
-.cell { 
-    background: -webkit-linear-gradient(#def9f9, #d2edf7);  /* safari */
-    background: -o-linear-gradient(#def9f9, #d2edf7);       /* opera */
-    background: -moz-linear-gradient(#def9f9, #d2edf7);     /* mozila */
-    background: linear-gradient(#def9f9, #d2edf7);    
 }
 .cell > div > a > li, .cell > ul > a > li {
     background: -webkit-linear-gradient(#c4ffff, #c4eeff);  /* safari */
@@ -27,6 +21,10 @@ footer {
     border-radius: 4px;  
 }
 .lateral-cell {
+    background: -webkit-linear-gradient(#def9f9, #d2edf7);  /* safari */
+    background: -o-linear-gradient(#def9f9, #d2edf7);       /* opera */
+    background: -moz-linear-gradient(#def9f9, #d2edf7);     /* mozila */
+    background: linear-gradient(#def9f9, #d2edf7);
     border-left: solid lightblue 1px;
     margin-top: 1px;    
 }
