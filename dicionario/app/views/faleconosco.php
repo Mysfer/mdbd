@@ -15,34 +15,27 @@
         <header class="large-12 medium-12 small-12 cell">
             <img src="/public/images/logo.png"/>
         </header>
-        <!-- corpo do site -->        <section class='grid-x grid-padding-x'>
+        <!-- corpo do site -->
+        <section class='grid-x grid-padding-x'>
             <!-- parte variante -->
             <div class="large-9 medium-9 small-9 cell">
                 <h3>Cadastre palavras:</h3>
-                <form method="post" action="/salvarpalavra">
-                    <div class="form-group">
-                        <label for="palavra">Palavra</label>
-                        <input class="input-group-field" type="text" name="palavra" id="palavra" value="">         
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <label for="pronuncia">Pronúncia</label>
-                        <input class="input-group-field" type="text" name="pronuncia" value="">
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <label for="origem">Origem</label>
-                        <input class="input-group-field" type="text" name="origem" value="">
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <label for="significado">Significado</label>
-                        <textarea name="significado" rows="4" cols="10"></textarea>
+                <form method="post" action="/feedback">
+                    <div class="input-group">
+                        <label for="nome">Nome:</label>
+                        <input class="input-group-field" type="text" name="nome" id="nome" value="">
                     </div>
 
-                    <div class="text-right">
-                    <button class="success button" type="">Enviar</button>
+                    <div class="input-group">
+                        <label for="email">E-mail:</label>
+                        <input class="input-group-field" type="email" name="email" value="">
                     </div>
+
+                    <div class="input-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" rows="4" cols="10"></textarea>
+                    </div>
+                    <button class="success button" type="">Enviar</button>
                 </form>
             </div>
             <!-- barra vertical lateral -->

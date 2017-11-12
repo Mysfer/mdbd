@@ -2,26 +2,35 @@ body {
     background: azure;
     
 }
-.cell {   
-    background: -webkit-linear-gradient(azure, #c4eeff);  /* safari */
-    background: -o-linear-gradient(azure, #c4eeff);       /* opera */
-    background: -moz-linear-gradient(azure, #c4eeff);     /* mozila */
-    background: linear-gradient(azure, #c4eeff);
-    border: 1px solid lightblue;
+header {
+    border: solid lightblue 2px;
     border-radius: 4px;
 }
-.cell > div > a > li, .cell > ul > li {
+footer {
+    background: lightblue;
+}
+.cell { 
+    background: -webkit-linear-gradient(#def9f9, #d2edf7);  /* safari */
+    background: -o-linear-gradient(#def9f9, #d2edf7);       /* opera */
+    background: -moz-linear-gradient(#def9f9, #d2edf7);     /* mozila */
+    background: linear-gradient(#def9f9, #d2edf7);    
+}
+.cell > div > a > li, .cell > ul > a > li {
     background: -webkit-linear-gradient(#c4ffff, #c4eeff);  /* safari */
     background: -o-linear-gradient(#c4ffff, #c4eeff);       /* opera */
     background: -moz-linear-gradient(#c4ffff, #c4eeff);     /* mozila */
     background: linear-gradient(#c4ffff, #c4eeff);
-    margin-top: 1px;    
+    margin: 1px;    
     list-style: none;
     color: black;  
-    border: 1px solid lightblue;
+    border: solid lightblue 2px;
     border-radius: 4px;  
 }
-.cell > div > a > li:hover, .cell > ul > li:hover {
+.lateral-cell {
+    border-left: solid lightblue 1px;
+    margin-top: 1px;    
+}
+.cell > div > a > li:hover, .cell > ul > a > li:hover {
     background: lightskyblue;    
 }
 .cell > form, .cell > table {
