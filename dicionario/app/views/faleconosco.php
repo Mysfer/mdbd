@@ -19,21 +19,21 @@
         <section class='grid-x grid-padding-x'>
             <!-- parte variante -->
             <div class="large-9 medium-9 small-9 cell">
-                <h3>Cadastre dicionários:</h3>
-                <form method="post" action="/salvardicionario">
+                <h3>Cadastre palavras:</h3>
+                <form method="post" action="/feedback">
                     <div class="input-group">
-                        <label for="nome">Nome</label>
+                        <label for="nome">Nome:</label>
                         <input class="input-group-field" type="text" name="nome" id="nome" value="">
                     </div>
 
                     <div class="input-group">
-                        <label for="autor">Autor</label>
-                        <input class="input-group-field" type="text" name="autor" value="">
+                        <label for="email">E-mail:</label>
+                        <input class="input-group-field" type="email" name="email" value="">
                     </div>
 
                     <div class="input-group">
-                        <label for="editora">Editora</label>
-                        <input class="input-group-field" type="text" name="editora" value="">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" rows="4" cols="10"></textarea>
                     </div>
                     <button class="success button" type="">Enviar</button>
                 </form>
@@ -54,7 +54,7 @@
         <footer class="large-12 medium-12 small-12">
             <h1>Zawarudo!</h1>
         </footer>
-    
+        
         <script src="./public/js/vendor/jquery.js"></script>
         <script src="./public/js/vendor/what-input.js"></script>
         <script src="./public/js/vendor/foundation.js"></script>
