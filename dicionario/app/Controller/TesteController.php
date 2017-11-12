@@ -59,7 +59,11 @@ class TesteController
         $dicionario = $q->innerdicio($id);  
 
         $sinonimo[] = $q->sinonimo($id); 
-        print_r($sinonimo);
+        // print_r($sinonimo);
+        // die();
+        foreach ($sinonimo as $s) {
+            echo $s['palavra'];
+        }
         die();
 
         //devolve a pagina de consulta 

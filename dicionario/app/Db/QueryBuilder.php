@@ -134,7 +134,7 @@ public function selectWhere($id)
     $sql = "select * from palavras
 left join sinonimo
 on sinonimo.palavras_id1 = palavras.id
-where sinonimo.palavras_id = :id";; 
+where sinonimo.palavras_id = :id"; 
     $s = $this->pdo->prepare($sql);
 
     $s->bindParam(':id', $id);

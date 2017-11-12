@@ -21,21 +21,24 @@
             <div class="large-9 medium-9 small-9 cell">
                 <h3>Cadastre dicionários:</h3>
                 <form method="post" action="/salvardicionario">
-                    <div class="input-group">
+                    <div class="form-group">
                         <label for="nome">Nome</label>
                         <input class="input-group-field" type="text" name="nome" id="nome" value="">
                     </div>
-
-                    <div class="input-group">
+                    <br>
+                    <div class="form-group">
                         <label for="autor">Autor</label>
                         <input class="input-group-field" type="text" name="autor" value="">
                     </div>
-
-                    <div class="input-group">
+                    <br>
+                    <div class="form-group">
                         <label for="editora">Editora</label>
                         <input class="input-group-field" type="text" name="editora" value="">
                     </div>
+                    <br>
+                    <div class="text-right">
                     <button class="success button" type="">Enviar</button>
+                    </div>
                 </form>
             </div>
             <!-- barra vertical lateral -->

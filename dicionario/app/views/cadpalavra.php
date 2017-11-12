@@ -15,32 +15,34 @@
         <header class="large-12 medium-12 small-12 cell">
             <img src="/public/images/logo.png"/>
         </header>
-        <!-- corpo do site -->
-        <section class='grid-x grid-padding-x'>
+        <!-- corpo do site -->        <section class='grid-x grid-padding-x'>
             <!-- parte variante -->
             <div class="large-9 medium-9 small-9 cell">
                 <h3>Cadastre palavras:</h3>
                 <form method="post" action="/salvarpalavra">
-                    <div class="input-group">
+                    <div class="form-group">
                         <label for="palavra">Palavra</label>
-                        <input class="input-group-field" type="text" name="palavra" id="palavra" value="">
+                        <input class="input-group-field" type="text" name="palavra" id="palavra" value="">         
                     </div>
-
-                    <div class="input-group">
+                    <br>
+                    <div class="form-group">
                         <label for="pronuncia">Pronúncia</label>
                         <input class="input-group-field" type="text" name="pronuncia" value="">
                     </div>
-
-                    <div class="input-group">
+                    <br>
+                    <div class="form-group">
                         <label for="origem">Origem</label>
                         <input class="input-group-field" type="text" name="origem" value="">
                     </div>
-
-                    <div class="input-group">
+                    <br>
+                    <div class="form-group">
                         <label for="significado">Significado</label>
                         <textarea name="significado" rows="4" cols="10"></textarea>
                     </div>
+
+                    <div class="text-right">
                     <button class="success button" type="">Enviar</button>
+                    </div>
                 </form>
             </div>
             <!-- barra vertical lateral -->
