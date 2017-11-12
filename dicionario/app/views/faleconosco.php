@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="/public/css/foundation.css">
         <link rel="stylesheet" href="/public/css/app.css">
-    <title>Página de cadastro</title>
+    <title>Fale Conosco</title>
 </head>
 
 <body>
@@ -23,20 +23,21 @@
             <div class="large-9 medium-9 small-9 cell">
                 <h3>Cadastre palavras:</h3>
                 <form method="post" action="/feedback">
-                    <div class="input-group">
+                    <div class="form-group">
                         <label for="nome">Nome:</label>
                         <input class="input-group-field" type="text" name="nome" id="nome" value="">
                     </div>
-
-                    <div class="input-group">
+                    <br>
+                    <div class="form-group">
                         <label for="email">E-mail:</label>
                         <input class="input-group-field" type="email" name="email" value="">
                     </div>
-
-                    <div class="input-group">
+                    <br>
+                    <div class="form-group">
                         <label for="mensagem">Mensagem:</label>
                         <textarea name="mensagem" rows="4" cols="10"></textarea>
                     </div>
+                    <br>
                     <button class="success button" type="">Enviar</button>
                 </form>
             </div>
