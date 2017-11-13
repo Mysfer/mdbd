@@ -45,7 +45,7 @@ class TesteController
 
     public function consultarpalavra()
     {
-
+        $dicionario = [];
         $sinonimo = [];
         //conexao com banco
         $q = new QueryBuilder();
@@ -58,13 +58,8 @@ class TesteController
 
         $dicionario = $q->innerdicio($id);  
 
-        $sinonimo[] = $q->sinonimo($id); 
-        // print_r($sinonimo);
-        // die();
-        foreach ($sinonimo as $s) {
-            echo $s['palavra'];
-        }
-        die();
+        $sinonimo = $q->sinonimo($id); 
+
         //devolve a pagina de consulta 
         require './app/views/cpalavra.php';
     }

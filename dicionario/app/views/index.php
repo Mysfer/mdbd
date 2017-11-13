@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/public/css/foundation.css">
         <link rel="stylesheet" href="/public/css/app.css">
+        <link rel="shortcut icon" href="public/images/faviconn.ico" type="image/x-icon">
     </head>
     <body>
         <!-- logotipo e cabeçalho -->
@@ -22,7 +23,7 @@
                 <ul class="h5">
                     <?php foreach($dados as $d) { ?>
                         
-                        <a href="/consultar/palavra?id=<?= $d['id'] ?>"><li><?= $d['palavra'] ?></li></a>
+                        <a href="/consultar/palavra?id=<?= $d['id'] ?>"><li><?= $d['palavra']?></li></a>
 
                     <?php  } ?>
                 </ul>

@@ -102,7 +102,7 @@ class QueryBuilder
     try{
         $s->execute();
 
-        return $s->fetch(\PDO::FETCH_ASSOC);
+        return $s->fetchAll(\PDO::FETCH_ASSOC);
 
     }  catch(\PDOException $e)
         {
@@ -142,7 +142,7 @@ where sinonimo.palavras_id = :id";
     try{
         $s->execute();
 
-        return $s->fetch(\PDO::FETCH_ASSOC);
+        return $s->fetchAll(\PDO::FETCH_ASSOC);
 
     }  catch(\PDOException $e)
         {
