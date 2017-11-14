@@ -149,4 +149,21 @@ where sinonimo.palavras_id = :id";
         die($e->getMessage());
         }
     }
+    public function search($table, $nome, $like)
+{
+    $like = '%'.$like.'%';
+    $sql = "select * from {$table} where {$nome} like :like"; 
+    $s = $this->pdo->prepare($sql);
+
+    $s->bindParam(':like', $like);
+
+    try{
+        $s->execute();
+
+        return $s->fetchAll(\PDO::FETCH_ASSOC);
+
+    }  catch(\PDOException $e){
+         die($e->getMessage());
+    }
+}
 }

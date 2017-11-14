@@ -68,8 +68,12 @@
                         </tr>
                     </thead>
                     <tbody>            
-                        <tr>                            
-                            <td><?= $dicionario['nome'] ?></td>
+                        <tr>                        
+                            <td>
+                            <?php foreach($dicionario as $a){ ?>
+                            <?= $a['nome'] ?>
+                            </td>
+                            <?php }?>
                         </tr>            
                     </tbody>
                     <thead>
@@ -79,9 +83,11 @@
                     </thead>
                     <tbody>            
                         <tr>
+                        <td>
                         <?php foreach ($sinonimo as $s){ ?>
-                            <td><a href="/consultar/palavra?id=<?= $s['id'] ?>"><?= $s['palavra'] ?></td>
+                            <a href="/consultar/palavra?id=<?= $s['id'] ?>"><?= $s['palavra'] ?><br>
                         <?php }?>
+                        </td>
                         </tr>            
                     </tbody>
                 </table>

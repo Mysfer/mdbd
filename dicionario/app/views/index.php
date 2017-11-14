@@ -10,9 +10,13 @@
     </head>
     <body>
         <!-- logotipo e cabeçalho -->
-        <header class="large-12 medium-12 small-12">
+        <header>
             <div class="cell">
-                <img src="/public/images/logo.png"/>
+                <img src="/public/images/logo.png" class='large-2 medium-2 small-2'/>
+                <div class="large-10 medium-10 small-10">
+                    <input type="search" name="like" /><img src='' />
+                    <input class="button" type="submit" value="pesquisar"/>
+                </div>
             </div>
         </header>
         <!-- corpo do site -->

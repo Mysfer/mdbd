@@ -130,6 +130,7 @@ class TesteController
 
     public function linkardicionario()
     {
+            
         //receber os dados
         $dados['table1_id_dicionario'] = $_POST['id2'];
         $dados['palavras_id'] = $_POST['id'];    
@@ -142,5 +143,21 @@ class TesteController
     
         //redirecionar
         header('Location: /vincular/dicionario');
+    }
+    public function pesquisar()
+    {
+        //conexao com banco
+        $q = new QueryBuilder();
+
+        //recebe palavras
+        $id = $_GET['table'];
+        $id = $_GET['nome'];
+        $id = $_GET['like'];
+
+        //coleta dos dados que serão usados
+        $dados = $q->search($table,$nome,$like);
+
+        //devolve a pagina de consulta 
+        require './app/views/cdicionario.php';
     }
 }
