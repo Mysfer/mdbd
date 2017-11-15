@@ -11,12 +11,10 @@
     <body>
         <!-- logotipo e cabeçalho -->
         <header>
-            <div class="cell">
-                <img src="/public/images/logo.png" class='large-2 medium-2 small-2'/>
-                <div class="large-10 medium-10 small-10">
-                    <input type="search" name="like" /><img src='' />
-                    <input class="button" type="submit" value="pesquisar"/>
-                </div>
+            <div class="cell large-12 medium-12 small-12">
+                <img src="/public/images/logo.png" width="200px"/>
+                <input type="search" name="like" /><img src='' />
+                <input class="button" type="submit" value="pesquisar"/> 
             </div>
         </header>
         <!-- corpo do site -->
@@ -26,27 +24,63 @@
                 <h2>Sugestões:</h2>
                 <ul class="h5">
                     <?php foreach($dados as $d) { ?>
-                        
-                        <a href="/consultar/palavra?id=<?= $d['id'] ?>"><li><?= $d['palavra']?></li></a>
-
+                    <li>                        
+                        <a href="/consultar/palavra?id=<?= $d['id'] ?>" class="button">
+                        <?= $d['palavra']?>
+                        </a>
+                    </li>
                     <?php  } ?>
                 </ul>
             </div>
             <!-- barra vertical lateral -->
             <div class="large-3 medium-3 small-3 cell lateral-cell">
-                <div class="icon-bar vertical six-up h3">
-                    <a href="/"><li>Home</li></a>
-                    <a href="/cadastro/palavra"><li>Cadastrar Palavra</li></a>                    
-                    <a href="/cadastro/dicionario"><li>Cadastrar Dicionario</li></a>
-                    <a href="/vincular/sinonimo"><li>Vincular Sinonimo</li></a>
-                    <a href="/vincular/dicionario"><li>Vincular Dicionario</li></a>
-                    <a href="/faleconosco"><li>Fale conosco</li></a>
-                </div>
+                <ul class="vertical menu align-center h3">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/cadastro/palavra">Cadastrar Palavra</a></li>                 
+                    <li><a href="/cadastro/dicionario">Cadastrar Dicionario</a></li>
+                    <li><a href="/vincular/sinonimo">Vincular Sinonimo</a></li>
+                    <li><a href="/vincular/dicionario">Vincular Dicionario</a></li>
+                    <li><a href="/faleconosco">Fale conosco</a></li>
+                </ul>
             </div>                
         </section>
         <!-- rodapé -->
-        <footer class="large-12 medium-12 small-12">
-            <h1>Zawarudo!</h1>
+        <footer>
+            <div class="large-12 medium-12 small-12">
+                <ul>
+                    <li>
+                        <h2>Sobre o Dicionline:</h2>
+                        <h5>Esse site, o Dicionline, no início era apenas um projeto de banco de dados que tinha como objetivo armazenar dados
+                            de dicionáriose palavras. A equipe decidiu subir um site que inserisse dados no nosso banco para que
+                            pudéssemos testá-lo, e o nosso brilhante líder <strike>João Pedro</strike> Paulo Henrique teve a idéia de desenvolver
+                            essa obra prima que hoje é acessada por milhões de usuários todos os dias.
+                        </h5>
+                    </li>
+                    <li>
+                        <h2>Nossa equipe:</h2>
+                        <ul class="h4">
+                            <li>
+                                <img src="/public/images/paulo.jpg" class="rounded"/>Paulo henrique Schiavetti
+                            </li>
+                            <li>
+                                <img src="/public/images/paulo.jpg" class="rounded"/>Bárbara Tavares
+                            </li>
+                            <li>
+                                <img src="/public/images/paulo.jpg" class="rounded"/>João Pedro Freitas
+                            </li>
+                            <li>
+                                <img src="/public/images/paulo.jpg" class="rounded"/>Larissa Adriana
+                            </li>
+                            <li>
+                                <img src="/public/images/paulo.jpg" class="rounded"/>Vitor Francisco
+                            </li>
+                            <li>
+                                <img src="/public/images/paulo.jpg" class="rounded"/>Letícya Barbosa
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </footer>
 
         <script src="./public/js/vendor/jquery.js"></script>
