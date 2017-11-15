@@ -55,9 +55,12 @@ switch ($uri) {
         $testeController->consultardicionario();
         break;
 
-    case '/faleconosco':
-        
+    case '/faleconosco':        
         require './app/views/faleconosco.php';
+        break;
+
+    case '/pesquisar':
+        $testeController->pesquisar();
         break;
 
     default:

@@ -150,14 +150,14 @@ class TesteController
         $q = new QueryBuilder();
 
         //recebe palavras
-        $id = $_GET['table'];
-        $id = $_GET['nome'];
-        $id = $_GET['like'];
+        $table = $_GET['table'];
+        $nome = $_GET['nome'];
+        $like = $_GET['like'];
 
         //coleta dos dados que serão usados
         $dados = $q->search($table,$nome,$like);
 
         //devolve a pagina de consulta 
-        require './app/views/cdicionario.php';
+        require './app/views/resultados.php';
     }
 }

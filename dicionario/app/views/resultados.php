@@ -25,7 +25,7 @@
         <section class='grid-x grid-padding-x'>
             <!-- parte variante -->
             <div class="large-9 medium-9 small-9 cell">
-                <h2>Sugestões:</h2>
+                <h2>Resultados:</h2>
                 <ul class="h5">
                     <?php foreach($dados as $d) { ?>
                     <li>                        
