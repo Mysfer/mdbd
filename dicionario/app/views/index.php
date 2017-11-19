@@ -12,13 +12,18 @@
         <!-- logotipo e cabeçalho -->
         <header>
             <div class="cell large-12 medium-12 small-12">
-                <img src="/public/images/logo.png" width="200px"/>
-                <form action="/pesquisar">
-                    <input type="search" name="like" />
-                    <input type="hidden" name="table" value="palavras"/>
-                    <input type="hidden" name="nome" value="palavra"/>
-                    <input class="button" type="submit" value="pesquisar"/>
-                </form>
+                <ul class="menu expanded">
+                    <li>
+                        <img src="/public/images/logo.png" width="200px"/>
+                    </li>
+                    <li>
+                        <form action="/pesquisar">
+                            <input type="search" name="like" />
+                            <input type="hidden" name="table" value="palavras"/>
+                            <input type="hidden" name="nome" value="palavra"/>
+                            <input class="button" type="submit" value="pesquisar"/>
+                        </form>
+                    </li>
             </div>
         </header>
         <!-- corpo do site -->
