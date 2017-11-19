@@ -40,7 +40,7 @@ class TesteController
         $q->insert('dicionario', $dados);
 
         //devolve a pagina cadastrar dicionario
-        header('Location: /cadastrar/dicionario');
+        header('Location: /cadastro/dicionario');
     }   
 
     public function consultarpalavra()
