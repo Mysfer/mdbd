@@ -67,26 +67,26 @@
                         essa obra prima que hoje é acessada por milhões de usuários todos os dias.
                     </h5>                    
                     <h2>Nossa equipe:</h2>
-                    <ul class="menu h4">
+                    <ul class="menu h4 dark-background">
                         <li>
-                            <img src="/public/images/paulo.jpg" class="rounded"/>Paulo henrique Schiavetti
+                            <a><img src="/public/images/paulo.jpg" class="rounded"/>Paulo henrique Schiavetti</a>
                         </li>
                         <li>
-                            <img src="/public/images/paulo.jpg" class="rounded"/>João Pedro Freitas
+                            <a><img src="/public/images/paulo.jpg" class="rounded"/>João Pedro Freitas</a>
                         </li>
                         <li>
-                            <img src="/public/images/paulo.jpg" class="rounded"/>Bárbara Tavares
+                            <a><img src="/public/images/paulo.jpg" class="rounded"/>Bárbara Tavares</a>
                         </li>
                         <li>
-                            <img src="/public/images/paulo.jpg" class="rounded"/>Larissa Adriana
+                            <a><img src="/public/images/paulo.jpg" class="rounded"/>Larissa Adriana</a>
                         </li>
                         <li>
-                            <img src="/public/images/paulo.jpg" class="rounded"/>Vitor Francisco
+                            <a><img src="/public/images/paulo.jpg" class="rounded"/>Vitor Francisco</a>
                         </li>
                         <li>
-                            <img src="/public/images/paulo.jpg" class="rounded"/>Letícya Barbosa
+                            <a><img src="/public/images/paulo.jpg" class="rounded"/>Letícya Barbosa</a>
                         </li>
-                    </ul>                   
+                    </ul>               
                 </div>
             </div>
         </footer>
