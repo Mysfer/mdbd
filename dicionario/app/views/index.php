@@ -59,7 +59,7 @@
                 <div class="large-12 medium-12 small-12 cell">                
                     <h2>Sobre o Dicionline:</h2>
                     <h5>Esse site, o Dicionline, no início era apenas um projeto de banco de dados que tinha como objetivo armazenar dados
-                        de dicionáriose palavras. A equipe decidiu subir um site que inserisse dados no nosso banco para que
+                        de dicionários e palavras. A equipe decidiu subir um site que inserisse dados no nosso banco para que
                         pudéssemos testá-lo, e o nosso brilhante líder <strike>João Pedro</strike> Paulo Henrique teve a idéia de desenvolver
                         essa obra prima que hoje é acessada por milhões de usuários todos os dias.
                     </h5>                    

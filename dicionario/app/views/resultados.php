@@ -27,13 +27,22 @@
             <div class="large-9 medium-9 small-9 cell">
                 <h2>Resultados:</h2>
                 <ul class="h5">
+
                     <?php foreach($dados as $d) { ?>
                     <li>                        
-                        <a href="/consultar/palavra?id=<?= $d['id'] ?>" class="button">
-                        <?= $d['palavra']?>
-                        </a>
+                        <?php if(empty($d['id'])) 
+                        {
+                             echo "Nenhum resultado encontrado."; 
+                        } else { 
+                        ?>
+                            <a href="/consultar/palavra?id=<?= $d['id'] ?>" class="button">
+                            <?= $d['palavra']?>
+                            </a>
+
+                        <?php } ?>                        
                     </li>
                     <?php  } ?>
+
                 </ul>
             </div>
             <!-- barra vertical lateral -->
