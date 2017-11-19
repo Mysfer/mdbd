@@ -49,15 +49,15 @@
             </div>
             <!-- barra vertical lateral -->
             <div class="large-3 medium-3 small-3 cell lateral-cell">
-                <div class="icon-bar vertical six-up h3">
-                    <a href="/"><li>Home</li></a>
-                    <a href="/cadastro/palavra"><li>Cadastrar Palavra</li></a>                    
-                    <a href="/cadastro/dicionario"><li>Cadastrar Dicionario</li></a>
-                    <a href="/vincular/sinonimo"><li>Vincular Sinonimo</li></a>
-                    <a href="/vincular/dicionario"><li>Vincular Dicionario</li></a>
-                    <a href="/faleconosco"><li>Fale conosco</li></a>
-                </div>
-            </div>
+                <ul class="vertical menu align-center h3">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/cadastro/palavra">Cadastrar Palavra</a></li>                 
+                    <li><a href="/cadastro/dicionario">Cadastrar Dicionario</a></li>
+                    <li><a href="/vincular/sinonimo">Vincular Sinonimo</a></li>
+                    <li><a href="/vincular/dicionario">Vincular Dicionario</a></li>
+                    <li><a href="/faleconosco">Fale conosco</a></li>
+                </ul>
+            </div>                
         </section>
         <!-- rodapé -->
         <footer class="large-12 medium-12 small-12">
