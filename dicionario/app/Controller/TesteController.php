@@ -22,7 +22,7 @@ class TesteController
         $q->insert('palavras', $dados);
 
         //redirecionar para a rota /consultarpalavra
-        header('Location: /consultarpalavra');    
+        header('Location: /cadastro/palavra');    
 
     }
 

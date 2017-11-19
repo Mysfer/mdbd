@@ -38,10 +38,6 @@ switch ($uri) {
     case '/linkardicionario':
         $testeController->linkardicionario();
         break;
-    
-    case '/cadastrar/dicionario':
-        require './app/views/caddicionario.php';
-        break;
 
     case '/salvardicionario':
         $testeController->salvardicionario();
