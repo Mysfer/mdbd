@@ -57,8 +57,38 @@
             </div>                
         </section>
         <!-- rodapé -->
-        <footer class="large-12 medium-12 small-12">
-            <h1>Zawarudo!</h1>
+        <footer>
+            <div class='grid-x grid-padding-x'>
+                <div class="large-12 medium-12 small-12 cell">                
+                    <h2>Sobre o Dicionline:</h2>
+                    <h5>Esse site, o Dicionline, no início era apenas um projeto de banco de dados que tinha como objetivo armazenar dados
+                        de dicionários e palavras. A equipe decidiu subir um site que inserisse dados no nosso banco para que
+                        pudéssemos testá-lo, e o nosso brilhante líder <strike>João Pedro</strike> Paulo Henrique teve a idéia de desenvolver
+                        essa obra prima que hoje é acessada por milhões de usuários todos os dias.
+                    </h5>                    
+                    <h2>Nossa equipe:</h2>
+                    <ul class="menu h4">
+                        <li>
+                            <img src="/public/images/paulo.jpg" class="rounded"/>Paulo henrique Schiavetti
+                        </li>
+                        <li>
+                            <img src="/public/images/paulo.jpg" class="rounded"/>João Pedro Freitas
+                        </li>
+                        <li>
+                            <img src="/public/images/paulo.jpg" class="rounded"/>Bárbara Tavares
+                        </li>
+                        <li>
+                            <img src="/public/images/paulo.jpg" class="rounded"/>Larissa Adriana
+                        </li>
+                        <li>
+                            <img src="/public/images/paulo.jpg" class="rounded"/>Vitor Francisco
+                        </li>
+                        <li>
+                            <img src="/public/images/paulo.jpg" class="rounded"/>Letícya Barbosa
+                        </li>
+                    </ul>                   
+                </div>
+            </div>
         </footer>
     
         <script src="./public/js/vendor/jquery.js"></script>

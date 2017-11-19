@@ -69,10 +69,10 @@
                             <img src="/public/images/paulo.jpg" class="rounded"/>Paulo henrique Schiavetti
                         </li>
                         <li>
-                            <img src="/public/images/paulo.jpg" class="rounded"/>Bárbara Tavares
+                            <img src="/public/images/paulo.jpg" class="rounded"/>João Pedro Freitas
                         </li>
                         <li>
-                            <img src="/public/images/paulo.jpg" class="rounded"/>João Pedro Freitas
+                            <img src="/public/images/paulo.jpg" class="rounded"/>Bárbara Tavares
                         </li>
                         <li>
                             <img src="/public/images/paulo.jpg" class="rounded"/>Larissa Adriana
