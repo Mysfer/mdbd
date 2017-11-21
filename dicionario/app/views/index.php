@@ -12,17 +12,17 @@
         <!-- logotipo e cabeçalho -->
         <header>
             <div class="cell large-12 medium-12 small-12">
-                <ul class="menu expanded">
+                <ul class="menu">
                     <li>
-                        <img src="/public/images/logo.png" width="200px"/>
+                        <a href="/"><img src="/public/images/logo.png" width="150px"/></a>
                     </li>
-                    <li>
-                        <form action="/pesquisar">
-                            <input type="search" name="like" />
-                            <input type="hidden" name="table" value="palavras"/>
-                            <input type="hidden" name="nome" value="palavra"/>
-                            <input class="button" type="submit" value="pesquisar"/>
-                        </form>
+                    <li class="has-form"> 
+                        <div class="row collapse">
+                                <input type="text" name="like" placeholder="Palavra">
+                                <input type="hidden" name="table" value="palavras"/>
+                                <input type="hidden" name="nome" value="palavra"/>
+                                <a href="#" class="button">Pesquisar</a>
+                        </div> 
                     </li>
             </div>
         </header>

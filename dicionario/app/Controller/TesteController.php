@@ -131,9 +131,9 @@ class TesteController
     public function linkardicionario()
     {
             
-        //receber os dados
-        $dados['table1_id_dicionario'] = $_POST['id2'];
-        $dados['palavras_id'] = $_POST['id'];    
+        //receber os dados        
+        $dados['palavras_id'] = $_POST['id'];
+        $dados['table1_id_dicionario'] = $_POST['id2'];    
     
         //conectar com o banco
         $q = new QueryBuilder();
