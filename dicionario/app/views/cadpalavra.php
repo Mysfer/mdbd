@@ -12,9 +12,21 @@
 
 <body>
     <!-- logotipo e cabeçalho -->
-        <header class="large-12 medium-12 small-12">
+        <header>
             <div class="cell">
-                <img src="/public/images/logo.png"/>
+                    <div class="large-3 medium-3 small-3">
+                        <a href="/"><img src="/public/images/logo.png" width="150px"/></a>
+                    </div>
+                    <div class="large-9 medium-9 small-9"> 
+                        <form action="/pesquisar">
+                                <input type="text" name="like" placeholder="Palavra">                                
+                                <input type="submit" class="button" value="Pesquisar"/>
+                                <select name="table">
+                                    <option value="palavras">Palavras</option>
+                                    <option value="dicionario">Dicionários</option>
+                                </select>
+                        </form> 
+                    </div>
             </div>
         </header>
         <!-- corpo do site -->        <section class='grid-x grid-padding-x'>

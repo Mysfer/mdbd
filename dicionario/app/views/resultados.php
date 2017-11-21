@@ -11,14 +11,20 @@
     <body>
         <!-- logotipo e cabeçalho -->
         <header>
-            <div class="cell large-12 medium-12 small-12">
-                <img src="/public/images/logo.png" width="200px"/>
-                <form action="/pesquisar">
-                    <input type="search" name="like" />
-                    <input type="hidden" name="table" value="palavras"/>
-                    <input type="hidden" name="nome" value="palavra"/>
-                    <input class="button" type="submit" value="pesquisar"/>
-                </form>
+            <div class="cell">
+                    <div class="large-3 medium-3 small-3">
+                        <a href="/"><img src="/public/images/logo.png" width="150px"/></a>
+                    </div>
+                    <div class="large-9 medium-9 small-9"> 
+                        <form action="/pesquisar">
+                                <input type="text" name="like" placeholder="Palavra">                                
+                                <input type="submit" class="button" value="Pesquisar"/>
+                                <select name="table">
+                                    <option value="palavras">Palavras</option>
+                                    <option value="dicionario">Dicionários</option>
+                                </select>
+                        </form> 
+                    </div>
             </div>
         </header>
         <!-- corpo do site -->
@@ -29,17 +35,17 @@
                 <ul class="h5">
 
                     <?php foreach($dados as $d) { ?>
-                    <li>                        
-                        <?php if(empty($d['id'])) 
-                        {
-                             echo "Nenhum resultado encontrado."; 
-                        } else { 
-                        ?>
-                            <a href="/consultar/palavra?id=<?= $d['id'] ?>" class="button">
-                            <?= $d['palavra']?>
-                            </a>
-
-                        <?php } ?>                        
+                    <li>
+                        <a href="/consultar/palavra?id=<?= $d['id'] ?>" class="button">
+                            <?php if(isset($d['palavra'])) 
+                            {
+                                echo $d['palavra'];
+                            }
+                            else {
+                                echo $d['nome'];
+                            }
+                            ?>
+                        </a>         
                     </li>
                     <?php  } ?>
 

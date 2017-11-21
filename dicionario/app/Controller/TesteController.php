@@ -150,9 +150,15 @@ class TesteController
         $q = new QueryBuilder();
 
         //recebe palavras
-        $table = $_GET['table'];
-        $nome = $_GET['nome'];
+        $table = $_GET['table'];        
         $like = $_GET['like'];
+
+        if($table=="palavras"){
+            $nome="palavra";
+        } 
+        else {
+            $nome="nome";
+        }
 
         //coleta dos dados que serão usados
         $dados = $q->search($table,$nome,$like);

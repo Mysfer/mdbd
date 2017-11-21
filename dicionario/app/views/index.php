@@ -11,19 +11,20 @@
     <body>
         <!-- logotipo e cabeçalho -->
         <header>
-            <div class="cell large-12 medium-12 small-12">
-                <ul class="menu">
-                    <li>
+            <div class="cell">
+                    <div class="large-3 medium-3 small-3">
                         <a href="/"><img src="/public/images/logo.png" width="150px"/></a>
-                    </li>
-                    <li class="has-form"> 
-                        <div class="row collapse">
-                                <input type="text" name="like" placeholder="Palavra">
-                                <input type="hidden" name="table" value="palavras"/>
-                                <input type="hidden" name="nome" value="palavra"/>
-                                <a href="#" class="button">Pesquisar</a>
-                        </div> 
-                    </li>
+                    </div>
+                    <div class="large-9 medium-9 small-9"> 
+                        <form action="/pesquisar">
+                                <input type="text" name="like" placeholder="Palavra">                                
+                                <input type="submit" class="button" value="Pesquisar"/>
+                                <select name="table">
+                                    <option value="palavras">Palavras</option>
+                                    <option value="dicionario">Dicionários</option>
+                                </select>
+                        </form> 
+                    </div>
             </div>
         </header>
         <!-- corpo do site -->
