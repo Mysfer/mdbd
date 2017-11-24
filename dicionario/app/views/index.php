@@ -10,32 +10,42 @@
     </head>
     <body>
         <!-- logotipo e cabeçalho -->
-        <header>
-            <div class="cell">
-                    <div class="large-3 medium-3 small-3">
-                        <a href="/"><img src="/public/images/logo.png" width="150px"/></a>
-                    </div>
-                    <div class="large-9 medium-9 small-9"> 
-                        <form action="/pesquisar">
-                                <input type="text" name="like" placeholder="Palavra">                                
+        <header class="menu">
+                <div>
+                    <a href="/"><img src="/public/images/logo.png" width="150px"/></a>
+                </div>
+                <div>
+                    <form action="/pesquisar">
+                        <ul class="menu align-right">                            
+                            <li>
+                                <input type="text" name="like" placeholder="Palavra">
+                            </li>
+                            <li>                                
                                 <input type="submit" class="button" value="Pesquisar"/>
+                            </li>
+                            <li> 
                                 <select name="table">
                                     <option value="palavras">Palavras</option>
                                     <option value="dicionario">Dicionários</option>
                                 </select>
-                        </form> 
-                    </div>
-            </div>
+                            </li>                            
+                        </ul> 
+                    </form>                   
+                </div>
         </header>
         <!-- corpo do site -->
         <section class='grid-x grid-padding-x'>
+            
+            <div class="large-2 medium-2 small-2 cell  right-border">
+                
+            </div>
             <!-- parte variante -->
-            <div class="large-9 medium-9 small-9 cell">
+            <div class="large-7 medium-7 small-7 cell">
                 <h2>Sugestões:</h2>
                 <ul class="h5">
                     <?php foreach($dados as $d) { ?>
                     <li>                        
-                        <a href="/consultar/palavra?id=<?= $d['id'] ?>" class="button">
+                        <a href="/consultar/palavra?id=<?= $d['id'] ?>">
                         <?= $d['palavra']?>
                         </a>
                     </li>
@@ -43,8 +53,8 @@
                 </ul>
             </div>
             <!-- barra vertical lateral -->
-            <div class="large-3 medium-3 small-3 cell light-background">
-                <ul class="vertical menu align-center h3">
+            <div class="large-3 medium-3 small-3 cell left-border">
+                <ul class="vertical menu align-center h4">
                     <li><a href="/">Home</a></li>
                     <li><a href="/cadastro/palavra">Cadastrar Palavra</a></li>                 
                     <li><a href="/cadastro/dicionario">Cadastrar Dicionario</a></li>

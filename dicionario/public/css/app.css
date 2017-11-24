@@ -1,12 +1,17 @@
-header > .cell {    
-    background: #b5e3f2;
-    background: -webkit-linear-gradient(#b5e3f2, lightblue);
-    background: -o-linear-gradient(#b5e3f2, lightblue);
-    background: -moz-linear-gradient(#b5e3f2, lightblue);
-    background: linear-gradient(#b5e3f2, lightblue);
+header {    
+    background: #f1f1f1;
+    background: -webkit-linear-gradient(lightcyan, lightblue);
+    background: -o-linear-gradient(lightcyan, lightblue);
+    background: -moz-linear-gradient(lightcyan, lightblue);
+    background: linear-gradient(lightcyan, lightblue);
 }
-.light-background {
-    background: #b5e3f2;     
+.left-border {
+    border-left: solid #c1c1c1 1px;
+    background: #f1f1f1;     
+}
+.right-border {
+    border-right: solid #c1c1c1 1px;
+    background: #f1f1f1;      
 }
 .dark-background > li {
     display: flex;
