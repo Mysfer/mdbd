@@ -39,7 +39,7 @@
         <section>            
             <div class="grid-x grid-padding-x">                
                 <!-- parte variante -->
-                <div class="large-9 medium-9 small-8 cell">
+                <div class="large-9 medium-9 small-7 cell">
                     <h2>Sugestões:</h2>
                     <ul class="h5">
                         <?php foreach($dados as $d) { ?>
@@ -52,16 +52,15 @@
                     </ul>
                 </div>
                 <!-- barra vertical lateral -->
-                <div class="large-3 medium-3 small-4 cell left-border">
-                    <br/>
-                    <ul class="vertical menu align-center h4">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/cadastro/palavra">Cadastrar Palavra</a></li>                 
-                        <li><a href="/cadastro/dicionario">Cadastrar Dicionario</a></li>
-                        <li><a href="/vincular/sinonimo">Vincular Sinonimo</a></li>
-                        <li><a href="/vincular/dicionario">Vincular Dicionario</a></li>
-                        <li><a href="/faleconosco">Fale conosco</a></li>
-                    </ul>
+                <div class="large-3 medium-3 small-5 cell left-border">
+                    <div class="vertical menu align-center h4">
+                        <div><a href="/">Home</a></div>
+                        <div><a href="/cadastro/palavra">Cadastrar Palavra</a></div>                 
+                        <div><a href="/cadastro/dicionario">Cadastrar Dicionario</a></div>
+                        <div><a href="/vincular/sinonimo">Vincular Sinonimo</a></div>
+                        <div><a href="/vincular/dicionario">Vincular Dicionario</a></div>
+                        <div><a href="/faleconosco">Fale conosco</a></div>
+                    </div>
                 </div>
             </div>                
         </section>

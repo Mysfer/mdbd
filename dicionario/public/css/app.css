@@ -7,11 +7,8 @@ header {
 }
 .left-border {
     border-left: solid #c1c1c1 1px;
-    background: #f1f1f1;     
-}
-.right-border {
-    border-right: solid #c1c1c1 1px;
-    background: #f1f1f1;      
+    background: #f1f1f1;
+    padding-bottom: 6.5cm;   
 }
 .dark-background > div > a { 
     display: flex;    
@@ -32,16 +29,15 @@ footer {
 li {
     list-style: none;
 }
-.vertical > li {
-    display: flex;
+.vertical > div {
     background: lightskyblue;
     margin: 1px;
     border-radius: 4px;
 }
-.menu > li > a, div > a {
+div > a {
     color: white;
 }
-.vertical > li:hover {
+.vertical > div:hover {
     background: deepskyblue;
 }
 form, table {
