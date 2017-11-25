@@ -10,13 +10,14 @@
     </head>
     <body>
         <!-- logotipo e cabeçalho -->
-        <header class="menu">
-                <div>
+        <header>
+            <div class='grid-x grid-margin-x'>
+                <div class="large-8 medium-6 small-3 cell">
                     <a href="/"><img src="/public/images/logo.png" width="150px"/></a>
                 </div>
-                <div>
+                <div class="large-4 medium-6 small-9 cell">
                     <form action="/pesquisar">
-                        <ul class="menu align-right">                            
+                        <ul class="menu">                            
                             <li>
                                 <input type="text" name="like" placeholder="Palavra">
                             </li>
@@ -30,71 +31,73 @@
                                 </select>
                             </li>                            
                         </ul> 
-                    </form>                   
+                    </form>                  
                 </div>
+            </div>
         </header>
         <!-- corpo do site -->
-        <section class='grid-x grid-padding-x'>
-            
-            <div class="large-2 medium-2 small-2 cell  right-border">
-                
-            </div>
-            <!-- parte variante -->
-            <div class="large-7 medium-7 small-7 cell">
-                <h2>Sugestões:</h2>
-                <ul class="h5">
-                    <?php foreach($dados as $d) { ?>
-                    <li>                        
-                        <a href="/consultar/palavra?id=<?= $d['id'] ?>">
-                        <?= $d['palavra']?>
-                        </a>
-                    </li>
-                    <?php  } ?>
-                </ul>
-            </div>
-            <!-- barra vertical lateral -->
-            <div class="large-3 medium-3 small-3 cell left-border">
-                <ul class="vertical menu align-center h4">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/cadastro/palavra">Cadastrar Palavra</a></li>                 
-                    <li><a href="/cadastro/dicionario">Cadastrar Dicionario</a></li>
-                    <li><a href="/vincular/sinonimo">Vincular Sinonimo</a></li>
-                    <li><a href="/vincular/dicionario">Vincular Dicionario</a></li>
-                    <li><a href="/faleconosco">Fale conosco</a></li>
-                </ul>
+        <section>            
+            <div class="grid-x grid-padding-x">                
+                <!-- parte variante -->
+                <div class="large-9 medium-9 small-8 cell">
+                    <h2>Sugestões:</h2>
+                    <ul class="h5">
+                        <?php foreach($dados as $d) { ?>
+                        <li>                        
+                            <a href="/consultar/palavra?id=<?= $d['id'] ?>">
+                            <?= $d['palavra']?>
+                            </a>
+                        </li>
+                        <?php  } ?>
+                    </ul>
+                </div>
+                <!-- barra vertical lateral -->
+                <div class="large-3 medium-3 small-4 cell left-border">
+                    <br/>
+                    <ul class="vertical menu align-center h4">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/cadastro/palavra">Cadastrar Palavra</a></li>                 
+                        <li><a href="/cadastro/dicionario">Cadastrar Dicionario</a></li>
+                        <li><a href="/vincular/sinonimo">Vincular Sinonimo</a></li>
+                        <li><a href="/vincular/dicionario">Vincular Dicionario</a></li>
+                        <li><a href="/faleconosco">Fale conosco</a></li>
+                    </ul>
+                </div>
             </div>                
         </section>
         <!-- rodapé -->
         <footer>
             <div class='grid-x grid-padding-x'>
-                <div class="large-12 medium-12 small-12 cell">                
+                <div class="large-6 medium-6 small-5 cell">                
                     <h2>Sobre o Dicionline:</h2>
                     <h5>Esse site, o Dicionline, no início era apenas um projeto de banco de dados que tinha como objetivo armazenar dados
                         de dicionários e palavras. A equipe decidiu subir um site que inserisse dados no nosso banco para que
                         pudéssemos testá-lo, e o nosso brilhante líder <strike>João Pedro</strike> Paulo Henrique teve a idéia de desenvolver
                         essa obra prima que hoje é acessada por milhões de usuários todos os dias.
-                    </h5>                    
+                    </h5>
+                </div>
+                <div class="large-6 medium-6 small-7 cell">                   
                     <h2>Nossa equipe:</h2>
-                    <ul class="menu h4 dark-background">
-                        <li>
-                            <a><img src="/public/images/paulo.jpg" class="rounded"/>Paulo henrique Schiavetti</a>
-                        </li>
-                        <li>
+                    <div class="grid-x dark-background">
+                        <div class="large-4 medium-8 small-12">
+                            <a><img src="/public/images/paulo.jpg" class="rounded"/>Paulo Henrique Schiavetti</a>
+                        </div>
+                        <div class="large-4 medium-8 small-12">
                             <a><img src="/public/images/paulo.jpg" class="rounded"/>João Pedro Freitas</a>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="large-4 medium-8 small-12">
                             <a><img src="/public/images/paulo.jpg" class="rounded"/>Bárbara Tavares</a>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="large-4 medium-8 small-12">
                             <a><img src="/public/images/paulo.jpg" class="rounded"/>Larissa Adriana</a>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="large-4 medium-8 small-12">
                             <a><img src="/public/images/paulo.jpg" class="rounded"/>Vitor Francisco</a>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="large-4 medium-8 small-12">
                             <a><img src="/public/images/paulo.jpg" class="rounded"/>Letícya Barbosa</a>
-                        </li>
-                    </ul>                   
+                        </div>
+                    </div>                   
                 </div>
             </div>
         </footer>

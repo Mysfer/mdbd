@@ -13,11 +13,12 @@ header {
     border-right: solid #c1c1c1 1px;
     background: #f1f1f1;      
 }
-.dark-background > li {
-    display: flex;
+.dark-background > div > a { 
+    display: flex;    
     background: lightskyblue;
     margin: 1px;
-    border-radius: 80px;
+    border-radius: 50px;
+    font-size: 16pt;
 }
 .rounded {
     width: 100px;
@@ -37,12 +38,12 @@ li {
     margin: 1px;
     border-radius: 4px;
 }
-.menu > li > a {
+.menu > li > a, div > a {
     color: white;
 }
 .vertical > li:hover {
     background: deepskyblue;
 }
-.cell > form, .cell > table {
+form, table {
     margin-top: 2px;
 }
