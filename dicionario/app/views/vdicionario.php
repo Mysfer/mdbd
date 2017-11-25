@@ -44,11 +44,12 @@
                             <?php } ?>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="dicionario">Dicionario:</label>
+
+                   <div class="form-group">
+                        <label for="palavra">dicionario:</label>
                         <select name="id2" id="">
                             <?php foreach($dados2 as $d) { ?>
-                            <option value="<?= $d['id'] ?>"><?= $d['nome'] ?></option>
+                            <option value="<?= $d['id_dicionario'] ?>"><?= $d['nome'] ?></option>
                             <?php } ?>
                         </select>
                     </div>
