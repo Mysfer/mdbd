@@ -11,27 +11,31 @@
     <body>
         <!-- logotipo e cabeçalho -->
         <header>
-            <div class='grid-x grid-margin-x'>
+            <div class='grid-x grid-padding-x'>
                 <div class="large-8 medium-6 small-3 cell">
                     <a href="/"><img src="/public/images/logo.png" width="150px"/></a>
                 </div>
-                <div class="large-4 medium-6 small-9 cell">
-                    <form action="/pesquisar">
-                        <ul class="menu">                            
-                            <li>
-                                <input type="text" name="like" placeholder="Palavra">
-                            </li>
-                            <li>                                
-                                <input type="submit" class="button" value="Pesquisar"/>
-                            </li>
-                            <li> 
-                                <select name="table">
-                                    <option value="palavras">Palavras</option>
-                                    <option value="dicionario">Dicionários</option>
-                                </select>
-                            </li>                            
-                        </ul> 
-                    </form>                  
+                <div class="large-4 medium-6 small-9 grid-y">
+                    <div class="large-6 medium-3 small-0">
+                    </div>
+                    <div class="large-6 medium-9 small-12">
+                        <form action="/pesquisar">
+                            <ul class="menu">                            
+                                <li>
+                                    <input type="text" name="like" placeholder="Pesquisa">
+                                </li>
+                                <li>                                
+                                    <input type="submit" class="button" value="Pesquisar"/>
+                                </li>
+                                <li> 
+                                    <select name="table">
+                                        <option value="palavras">Palavras</option>
+                                        <option value="dicionario">Dicionários</option>
+                                    </select>
+                                </li>                            
+                            </ul> 
+                        </form>
+                    </div>      
                 </div>
             </div>
         </header>
@@ -40,7 +44,7 @@
             <div class="grid-x grid-padding-x">                
                 <!-- parte variante -->
                 <div class="large-9 medium-9 small-7 cell">
-                    <h2>Sugestões:</h2>
+                    <h3>Sugestões:</h3>
                     <ul class="h5">
                         <?php foreach($dados as $d) { ?>
                         <li>                        

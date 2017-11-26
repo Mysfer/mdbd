@@ -13,66 +13,72 @@
 <body>
         <!-- logotipo e cabeçalho -->
         <header>
-            <div class='grid-x grid-margin-x'>
+            <div class='grid-x grid-padding-x'>
                 <div class="large-8 medium-6 small-3 cell">
                     <a href="/"><img src="/public/images/logo.png" width="150px"/></a>
                 </div>
-                <div class="large-4 medium-6 small-9 cell">
-                    <form action="/pesquisar">
-                        <ul class="menu">                            
-                            <li>
-                                <input type="text" name="like" placeholder="Palavra">
-                            </li>
-                            <li>                                
-                                <input type="submit" class="button" value="Pesquisar"/>
-                            </li>
-                            <li> 
-                                <select name="table">
-                                    <option value="palavras">Palavras</option>
-                                    <option value="dicionario">Dicionários</option>
-                                </select>
-                            </li>                            
-                        </ul> 
-                    </form>                  
+                <div class="large-4 medium-6 small-9 grid-y">
+                    <div class="large-6 medium-3 small-0">
+                    </div>
+                    <div class="large-6 medium-9 small-12">
+                        <form action="/pesquisar">
+                            <ul class="menu">                            
+                                <li>
+                                    <input type="text" name="like" placeholder="Pesquisa">
+                                </li>
+                                <li>                                
+                                    <input type="submit" class="button" value="Pesquisar"/>
+                                </li>
+                                <li> 
+                                    <select name="table">
+                                        <option value="palavras">Palavras</option>
+                                        <option value="dicionario">Dicionários</option>
+                                    </select>
+                                </li>                            
+                            </ul> 
+                        </form>
+                    </div>      
                 </div>
             </div>
         </header>
         <!-- corpo do site -->
-        <section class='grid-x grid-padding-x'>
-            <!-- parte variante -->
-            <div class="large-9 medium-9 small-7 cell">
-                <h2>Vincular sinônimos:</h2>
-                <form method="post" action="/linkarsinonimo">
+        <section>            
+            <div class="grid-x grid-padding-x">
+                <!-- parte variante -->
+                <div class="large-9 medium-9 small-7 cell">
+                    <h3>Vincular sinônimos:</h3>
+                    <form method="post" action="/linkarsinonimo">
 
-                    <div class="form-group">
-                        <label for="palavra">Palavra a ser vinculada:</label>
-                        <select name="id" id="">
-                            <?php foreach($dados as $d) { ?>
-                            <option value="<?= $d['id'] ?>"><?= $d['palavra'] ?></option>
-                            <?php } ?>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="sinonimo">Sinônimo:</label>
-                        <select name="id2" id="">
-                            <?php foreach($dados as $d) { ?>
-                            <option value="<?= $d['id'] ?>"><?= $d['palavra'] ?></option>
-                            <?php } ?>
-                        </select>
-                    </div>
+                        <div class="form-group">
+                            <label for="palavra">Palavra a ser vinculada:</label>
+                            <select name="id" id="">
+                                <?php foreach($dados as $d) { ?>
+                                <option value="<?= $d['id'] ?>"><?= $d['palavra'] ?></option>
+                                <?php } ?>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sinonimo">Sinônimo:</label>
+                            <select name="id2" id="">
+                                <?php foreach($dados as $d) { ?>
+                                <option value="<?= $d['id'] ?>"><?= $d['palavra'] ?></option>
+                                <?php } ?>
+                            </select>
+                        </div>
 
-                    <input class="success button" type="submit" value="Enviar"/>
-                </form>
-            </div>
-            <!-- barra vertical lateral -->
-                <div class="large-3 medium-3 small-5 cell left-border">
-                    <div class="vertical menu align-center h4">
-                        <div><a href="/">Home</a></div>
-                        <div><a href="/cadastro/palavra">Cadastrar Palavra</a></div>                 
-                        <div><a href="/cadastro/dicionario">Cadastrar Dicionario</a></div>
-                        <div><a href="/vincular/sinonimo">Vincular Sinonimo</a></div>
-                        <div><a href="/vincular/dicionario">Vincular Dicionario</a></div>
-                        <div><a href="/faleconosco">Fale conosco</a></div>
+                        <input class="success button" type="submit" value="Enviar"/>
+                    </form>
+                </div>
+                <!-- barra vertical lateral -->
+                    <div class="large-3 medium-3 small-5 cell left-border">
+                        <div class="vertical menu align-center h4">
+                            <div><a href="/">Home</a></div>
+                            <div><a href="/cadastro/palavra">Cadastrar Palavra</a></div>                 
+                            <div><a href="/cadastro/dicionario">Cadastrar Dicionario</a></div>
+                            <div><a href="/vincular/sinonimo">Vincular Sinonimo</a></div>
+                            <div><a href="/vincular/dicionario">Vincular Dicionario</a></div>
+                            <div><a href="/faleconosco">Fale conosco</a></div>
+                        </div>
                     </div>
                 </div>
             </div>                

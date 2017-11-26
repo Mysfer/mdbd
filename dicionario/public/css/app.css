@@ -1,5 +1,5 @@
-header {    
-    background: #f1f1f1;
+header > div {    
+    background: lightblue;
     background: -webkit-linear-gradient(lightcyan, lightblue);
     background: -o-linear-gradient(lightcyan, lightblue);
     background: -moz-linear-gradient(lightcyan, lightblue);
