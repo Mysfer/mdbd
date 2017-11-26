@@ -52,9 +52,10 @@ class TesteController
 
         //recebe id da palavra
         $id = $_GET['id'];
+        $table= 'palavras';
 
         //coleta dos dados que serão usados
-        $dados = $q->selectWhere($id);
+        $dados = $q->selectWhere($id,$table);
 
         $dicionario = $q->innerdicio($id);  
 
@@ -71,9 +72,10 @@ class TesteController
 
         //recebe id da palavra
         $id = $_GET['id'];
+        $table= 'dicionario';
 
         //coleta dos dados que serão usados
-        $dados = $q->selectWhere($id);
+        $dados = $q->selectWhere($id,$table);
 
         //devolve a pagina de consulta 
         require './app/views/cdicionario.php';

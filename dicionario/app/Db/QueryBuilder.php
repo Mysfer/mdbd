@@ -110,10 +110,11 @@ class QueryBuilder
         }
     }
 
-public function selectWhere($id, $fetch = \PDO::FETCH_ASSOC)
+public function selectWhere($id, $table, $fetch = \PDO::FETCH_ASSOC)
 {
+  if ($table=='palavras'){ $campo='id';} else { $campo='id_dicionario';}
 
-  $sql = "select * from palavras where id = :id"; 
+  $sql = "select * from {$table} where {$campo} = :id"; 
   $s = $this->pdo->prepare($sql);
 
   $s->bindParam(':id', $id);

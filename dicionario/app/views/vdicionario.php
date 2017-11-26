@@ -72,7 +72,7 @@
                 </div>
                 <!-- barra vertical lateral -->
                     <div class="large-3 medium-3 small-5 cell left-border">
-                        <div class="vertical menu align-center h4">
+                        <div class="vertical menu align-center text-center h4">
                             <div><a href="/">Home</a></div>
                             <div><a href="/cadastro/palavra">Cadastrar Palavra</a></div>                 
                             <div><a href="/cadastro/dicionario">Cadastrar Dicionario</a></div>
@@ -86,37 +86,28 @@
         </section>
         <!-- rodapé -->
         <footer>
-            <div class='grid-x grid-padding-x'>
-                <div class="large-6 medium-6 small-5 cell">                
-                    <h2>Sobre o Dicionline:</h2>
-                    <h5>Esse site, o Dicionline, no início era apenas um projeto de banco de dados que tinha como objetivo armazenar dados
-                        de dicionários e palavras. A equipe decidiu subir um site que inserisse dados no nosso banco para que
-                        pudéssemos testá-lo, e o nosso brilhante líder <strike>João Pedro</strike> Paulo Henrique teve a idéia de desenvolver
-                        essa obra prima que hoje é acessada por milhões de usuários todos os dias.
-                    </h5>
-                </div>
-                <div class="large-6 medium-6 small-7 cell">                   
-                    <h2>Nossa equipe:</h2>
-                    <div class="grid-x dark-background">
-                        <div class="large-4 medium-8 small-12">
-                            <a><img src="/public/images/paulo.jpg" class="rounded"/>Paulo Henrique Schiavetti</a>
-                        </div>
-                        <div class="large-4 medium-8 small-12">
-                            <a><img src="/public/images/paulo.jpg" class="rounded"/>João Pedro Freitas</a>
-                        </div>
-                        <div class="large-4 medium-8 small-12">
-                            <a><img src="/public/images/paulo.jpg" class="rounded"/>Bárbara Tavares</a>
-                        </div>
-                        <div class="large-4 medium-8 small-12">
-                            <a><img src="/public/images/paulo.jpg" class="rounded"/>Larissa Adriana</a>
-                        </div>
-                        <div class="large-4 medium-8 small-12">
-                            <a><img src="/public/images/paulo.jpg" class="rounded"/>Vitor Francisco</a>
-                        </div>
-                        <div class="large-4 medium-8 small-12">
-                            <a><img src="/public/images/paulo.jpg" class="rounded"/>Letícya Barbosa</a>
-                        </div>
-                    </div>                   
+            <div class="grid-y grid-padding-x">
+                <div class="cell large-6 medium-6 small-6 text-center">          
+                <p>
+                    <br>
+                    © 2017-2017 DicioEmira, Inc.
+                    <br>
+                    (19) 3866-4907                    
+                </p>
+                </div>                  
+                <div class="cell large-6 medium-6 small-6 grid-x h5">
+                    <div class="large-3 medium-4 small-12">
+                        <a><img src="/public/images/email.png" width="60px"/>E-mail</a>
+                    </div>
+                    <div class="large-3 medium-4 small-12">
+                        <a><img src="/public/images/email.png" width="60px"/>Facebook</a>
+                    </div>
+                    <div class="large-3 medium-4 small-12">
+                        <a><img src="/public/images/email.png" width="60px"/>Twitter</a>
+                    </div>
+                    <div class="large-3 medium-4 small-12">
+                        <a><img src="/public/images/email.png" width="60px"/>Github</a>
+                    </div>
                 </div>
             </div>
         </footer>
