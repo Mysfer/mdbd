@@ -110,7 +110,7 @@ class QueryBuilder
         }
     }
 
-public function selectWhere($id)
+public function selectWhere($id, $fetch = \PDO::FETCH_ASSOC)
 {
 
   $sql = "select * from palavras where id = :id"; 
@@ -121,7 +121,7 @@ public function selectWhere($id)
   try{
       $s->execute();
 
-      return $s->fetch(\PDO::FETCH_ASSOC);
+      return $s->fetch($fetch);
 
   }  catch(\PDOException $e)
     {
@@ -149,18 +149,16 @@ where sinonimo.palavras_id = :id";
         die($e->getMessage());
         }
     }
-    public function search($table, $nome, $like)
+    public function search($table, $nome, $like, $fetch = \PDO::FETCH_ASSOC)
 {
     $like = '%'.$like.'%';
-    $sql = "select * from {$table} where {$nome} like :like"; 
-    $s = $this->pdo->prepare($sql);
-
+    $s = $this->pdo->prepare("select * from {$table} where {$nome} like :like");
     $s->bindParam(':like', $like);
 
     try{
         $s->execute();
 
-        return $s->fetchAll(\PDO::FETCH_ASSOC);
+        return $s->fetchAll($fetch);
 
     }  catch(\PDOException $e){
          die($e->getMessage());

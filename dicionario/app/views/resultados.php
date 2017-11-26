@@ -44,7 +44,7 @@
             <div class="grid-x grid-padding-x">
                 <!-- parte variante -->
                 <div class="large-9 medium-9 small-7 cell">
-                    <h2>Resultados:</h2>
+                    <h3>Resultados:</h3>
                     <ul class="h5">
 
                         <?php foreach($dados as $d) { ?>

@@ -58,6 +58,10 @@ switch ($uri) {
     case '/pesquisar':
         $testeController->pesquisar();
         break;
+    
+    case '/feedback':
+        $testeController->feedback();
+        break;
 
     default:
         require './app/views/error.html'; 
