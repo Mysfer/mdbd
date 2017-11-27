@@ -110,7 +110,7 @@
                             <tr>
                                 <td>
                                     <?php foreach ($sinonimo as $s){ ?>
-                                        <a href="/consultar/palavra?id=<?= $s['id'] ?>"><?= $s['palavra'] ?><br/>
+                                        <a href="/consultar/palavras?id=<?= $s['id'] ?>"><?= $s['palavra'] ?><br/>
                                     <?php }?>
                                 </td>
                             </tr>            

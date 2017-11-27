@@ -49,15 +49,20 @@
 
                         <?php foreach($dados as $d) { ?>
                         <li>
-                            <a href="/consultar/<?= $table ?>?id=<?= $d['id_dicionario'] ?>">
-                                <?php if(isset($d['palavra'])) 
-                                {
-                                    echo $d['palavra'];
-                                }
-                                else {
-                                    echo $d['nome'];
-                                }
-                                ?>
+                            <?php if(isset($d['palavra'])) 
+                                { ?>
+                                
+                                <a href="/consultar/<?= $table ?>?id=<?= $d['id'] ?>">
+
+                                <?= $d['palavra']; ?>       
+                                                                                            
+                                <?php } else { ?>
+
+                                <a href="/consultar/<?= $table ?>?id=<?= $d['id_dicionario'] ?>">
+
+                                    <?= $d['nome']; ?>
+
+                                <?php } ?>
                             </a>         
                         </li>
                         <?php  } ?>

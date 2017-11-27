@@ -47,7 +47,7 @@
                     <ul class="h5">
                         <?php foreach($dados as $d) { ?>
                         <li>                        
-                            <a href="/consultar/palavra?id=<?= $d['id'] ?>">
+                            <a href="/consultar/palavras?id=<?= $d['id'] ?>">
                             <?= $d['palavra']?>
                             </a>
                         </li>
