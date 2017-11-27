@@ -14,10 +14,10 @@
     <!-- logotipo e cabeçalho -->
         <header>
             <div class='grid-x grid-padding-x'>
-                <div class="large-8 medium-6 small-3 cell">
+                <div class="large-7 medium-6 small-3 cell">
                     <a href="/"><img src="/public/images/logo.png" width="150px"/></a>
                 </div>
-                <div class="large-4 medium-6 small-9 grid-y">
+                <div class="large-5 medium-6 small-9 grid-y">
                     <div class="large-6 medium-3 small-0">
                     </div>
                     <div class="large-6 medium-9 small-12">
