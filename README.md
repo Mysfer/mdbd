@@ -6,9 +6,9 @@
 
 3. Mostre qual dicionario as palavras pertencem
 
-4. Mostre apenas as palavras com mais de um significado
+4. Mostre quantas palavras tem em cada dicionário
 
-5. Mostre quantas definições uma palavra tem em todos os dicionarios 
+5. Mostre quantas palavras tem origem brasileira (sigla "BR")
 
 
 ### :octocat: Alunos: João Pedro, Bárbara Tavares, Paulo Henrique, Larissa Adriana e Leticya Oliveira e Vitor Francisco
