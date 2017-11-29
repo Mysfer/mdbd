@@ -148,6 +148,7 @@ class TesteController
         //redirecionar
         header('Location: /vincular/dicionario');
     }
+    
     public function pesquisar()
     {
         //conexao com banco
@@ -170,6 +171,7 @@ class TesteController
         //devolve a pagina de consulta 
         require './app/views/resultados.php';
     }
+
     public function feedback()
     {
         header('location: /faleconosco');
