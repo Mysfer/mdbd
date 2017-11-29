@@ -89,12 +89,37 @@ class QueryBuilder
     public function innerdicio($id)
     {
 
-    $sql = "select dicionario.nome from dicionario
+    $sql = "select dicionario.id_dicionario, dicionario.nome from dicionario
     inner join pertence 
     on dicionario.id_dicionario = table1_id_dicionario
     inner join palavras
     on palavras.id = pertence.palavras_id
     where palavras.id = :id"; 
+    $s = $this->pdo->prepare($sql);
+
+    $s->bindParam(':id', $id);
+
+    try{
+        $s->execute();
+
+        return $s->fetchAll(\PDO::FETCH_ASSOC);
+
+    }  catch(\PDOException $e)
+        {
+        die($e->getMessage());
+        }
+    }
+
+    public function innerdicio2($id)
+    {
+
+    $sql = "SELECT palavras.id, palavras.palavra FROM dicionario
+        inner join pertence
+        on dicionario.id_dicionario = pertence.table1_id_dicionario
+        inner join palavras
+        on pertence.palavras_id = palavras.id
+        where id_dicionario = :id"; 
+
     $s = $this->pdo->prepare($sql);
 
     $s->bindParam(':id', $id);

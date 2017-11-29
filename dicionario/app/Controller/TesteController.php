@@ -77,6 +77,8 @@ class TesteController
         //coleta dos dados que serão usados
         $dados = $q->selectWhere($id,$table);
 
+        $palavras = $q->innerdicio2($id);
+
         //devolve a pagina de consulta 
         require './app/views/cdicionario.php';
     }

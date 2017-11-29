@@ -76,7 +76,21 @@
                                 <tr>                
                                     <td><?= $dados['editora'] ?></td>                             
                                 </tr>                    
-                            </tbody>                                       
+                            </tbody>
+                            <thead>
+                                <tr>                
+                                    <th>palavras</th>
+                                </tr>
+                            </thead>
+                            <tbody>            
+                                <tr>
+                                    <td>
+                                        <?php foreach ($palavras as $p){ ?>
+                                            <a href="/consultar/palavras?id=<?= $p['id'] ?>"><?= $p['palavra'] ?><br/>
+                                        <?php }?>
+                                    </td>
+                                </tr>           
+                            </tbody>                                      
                         </table>
                     </div>
                     <!-- barra vertical lateral -->

@@ -96,7 +96,7 @@
                             <tr>
                                 <td>
                                     <?php foreach($dicionario as $a){ ?>                            
-                                    <?= $a['nome'] ?><br/>                           
+                                    <a href="/consultar/dicionario?id=<?= $a['id_dicionario'] ?>"><?= $a['nome'] ?><br/>                           
                                     <?php }?>
                                 </td>
                             </tr>            
